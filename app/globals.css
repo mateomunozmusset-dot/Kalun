@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* =============================================================
+   KALUN — design tokens (Tailwind v4 CSS-first theme)
+   ============================================================= */
+@theme inline {
+  --color-blanco: #faf9f7;
+  --color-negro: #1e1e1e;
+  /* Paleta oficial KALUN (colorimetría entregada por la marca) */
+  --color-arena: #e7ddd1;
+  --color-camello: #c8a17a;
+  --color-cafe-cuero: #8b5e3c; /* = COGNAC oficial */
+  --color-cognac: #8b5e3c;
+  --color-chocolate: #4a2e23;
+  --color-burdeo: #61222b; /* acento de marca (logo principal) */
+  --color-gris-calido: #eaeaea;
+  --color-plata: #c7c9cc;
+
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-inter);
+
+  /* Curva ease-out fuerte para interacciones UI (emil-design-eng) */
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* =============================================================
+   Reset & base
+   ============================================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-blanco);
+  color: var(--color-negro);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-burdeo);
+  color: var(--color-blanco);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-burdeo);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+}
+
+/* Reserved: intentionally no prefers-reduced-motion overrides in CSS.
+   All motion is handled per-component via Framer Motion's useReducedMotion()
+   in AnimatedSection, so nothing here needs disabling. */
