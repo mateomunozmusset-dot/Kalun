@@ -8,7 +8,7 @@ export default function Hero() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="relative h-svh min-h-[640px] w-full flex items-center justify-center overflow-hidden bg-burdeo text-blanco">
+    <section className="relative h-svh min-h-[640px] w-full flex items-center justify-center overflow-hidden bg-[#5c1f28] text-blanco">
       <motion.div
         initial={reduced ? { opacity: 1 } : { opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
@@ -16,12 +16,12 @@ export default function Hero() {
         className="relative z-10 flex flex-col items-center text-center px-6"
       >
         <Image
-          src="/images/brand/logo-arena.png"
+          src="/images/brand/logo-burdeo.png"
           alt="KALUN — Hecho a mano para toda la vida"
           width={560}
           height={560}
           priority
-          className="w-[220px] md:w-[320px] lg:w-[360px] h-auto"
+          className="w-[280px] md:w-[400px] lg:w-[460px] h-auto"
         />
 
         <motion.div
