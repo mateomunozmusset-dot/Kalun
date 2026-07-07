@@ -7,14 +7,14 @@ export const BRAND = {
     "Artículos de cuero hechos a mano, diseñados para acompañar la vida diaria durante muchos años.",
 };
 
-// PLACEHOLDER: número de WhatsApp de negocio, sin "+" ni espacios.
-export const WHATSAPP_NUMBER = "56900000000";
+// Número de WhatsApp de negocio, sin "+" ni espacios.
+export const WHATSAPP_NUMBER = "56961567905";
 
-// PLACEHOLDER: datos de contacto reales.
+// Datos de contacto.
 export const CONTACT = {
-  email: "hola@kalun.cl",
-  phone: "+56 9 0000 0000",
-  address: "Santiago, Chile",
+  email: "Kalun.tejido@gmail.com",
+  phone: "+56 9 6156 7905",
+  address: "Chile",
 };
 
 // PLACEHOLDER: redes sociales reales.

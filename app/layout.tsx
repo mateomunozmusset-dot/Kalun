@@ -5,8 +5,11 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
-// PLACEHOLDER: reemplazar por el dominio real una vez publicado.
-const BASE_URL = "https://kalun.cl";
+// En Vercel usa automáticamente el dominio de producción (para que el logo del
+// preview del enlace cargue bien). Si algún día hay dominio propio, reemplazar el fallback.
+const BASE_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "https://kalun.cl";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

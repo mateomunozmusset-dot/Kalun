@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { InstagramIcon, FacebookIcon } from "@/components/shared/SocialIcons";
 import { BRAND, CONTACT, SOCIAL } from "@/lib/constants";
 
@@ -9,7 +10,13 @@ export default function Footer() {
     <footer className="bg-negro text-blanco pt-20 pb-10 px-6 md:px-10">
       <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="flex flex-col gap-4">
-          <span className="text-xl tracking-[0.2em] font-display">{BRAND.name}</span>
+          <Image
+            src="/images/brand/logo-arena.png"
+            alt={`${BRAND.name} — logotipo`}
+            width={150}
+            height={150}
+            className="w-[132px] h-auto -ml-1"
+          />
           <p className="text-sm text-blanco/60 max-w-xs">{BRAND.tagline}</p>
           <div className="flex gap-4 mt-2">
             <a href={SOCIAL.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
