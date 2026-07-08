@@ -14,7 +14,7 @@ export default function ProductosPage() {
       <PageHeader
         eyebrow="Colección"
         title="Cada pieza, hecha a mano"
-        description="Bolsos, carteras, bandoleras y accesorios en cuero curtido vegetal."
+        description="Bolsos, carteras, bandoleras y accesorios en cuero genuino, hechos a mano."
       />
       <section className="py-16 md:py-24 px-6 md:px-10">
         <div className="max-w-[1600px] mx-auto">

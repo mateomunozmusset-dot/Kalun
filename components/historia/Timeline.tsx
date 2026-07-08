@@ -1,12 +1,22 @@
 import AnimatedSection from "@/components/shared/AnimatedSection";
 
-// Contenido de muestra — reemplazar por los hitos reales de la marca.
 const MILESTONES = [
-  { year: "2021", text: "Primeras piezas hechas a mano en un taller pequeño, para amigos y familia." },
-  { year: "2022", text: "Nace la colección Origen y el nombre KALUN, con foco en durabilidad y diseño simple." },
-  { year: "2023", text: "La colección Origen crece y llega a clientes en distintas partes de Chile." },
-  { year: "2024", text: "Sumamos el diseño a medida: piezas únicas hechas a mano según cada cliente." },
-  { year: "Hoy", text: "Seguimos produciendo en lotes pequeños, sin perder el control artesanal de cada pieza." },
+  {
+    year: "El origen",
+    text: "KALUN nace entre telares: ponchos y ruanas de lana de oveja y alpaca, tejidos a mano junto a artesanos chilenos, bajo el primer sello de la espiral tejida.",
+  },
+  {
+    year: "El cuero",
+    text: "El oficio crece y el cuero genuino entra al taller: carteras, bolsos y accesorios hechos a mano, pieza por pieza.",
+  },
+  {
+    year: "La marca",
+    text: "KALUN renueva su identidad — el monograma K que hoy nos acompaña — y nace la colección Origen.",
+  },
+  {
+    year: "Hoy",
+    text: "Seguimos creando en lotes pequeños, entre cuero y textil, con la misma dedicación del primer día. Diseñamos piezas para acompañar la vida.",
+  },
 ];
 
 export default function Timeline() {

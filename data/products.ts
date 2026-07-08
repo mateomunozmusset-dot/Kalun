@@ -1,6 +1,12 @@
 export type Category = "Bolsos" | "Carteras" | "Bandoleras" | "Accesorios";
 export type Collection = "Origen";
 
+export interface Review {
+  author: string;
+  rating: number; // 1 a 5
+  text: string;
+}
+
 export interface Product {
   slug: string;
   name: string;
@@ -14,6 +20,7 @@ export interface Product {
   fabricationTime: string;
   images: string[]; // rutas bajo /images/products/{slug}/
   featured?: boolean;
+  reviews: Review[];
 }
 
 export const products: Product[] = [
@@ -23,9 +30,9 @@ export const products: Product[] = [
     category: "Carteras",
     collection: "Origen",
     price: 78000,
-    shortDescription: "Cartera de gamuza en tono ladrillo con asas de cuero negro y herraje de toro.",
+    shortDescription: "La pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día.",
     longDescription:
-      "Escencia es una cartera de gamuza en tono ladrillo con asas y ribetes de cuero negro. Lleva herraje de cabeza de toro en metal plateado, borlas de cuero y correa bandolera ajustable y desmontable, para usarla de mano o cruzada. Medidas: 25 × 21 cm, fuelle de 11 cm.",
+      "Escencia es la pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día. Cartera de gamuza en tono ladrillo con asas y ribetes de cuero negro; el herraje de cabeza de toro en metal plateado le agrega identidad y personalidad. Incluye borlas de cuero y correa bandolera ajustable y desmontable, para usarla de mano o cruzada. Medidas: 25 × 21 cm, fuelle de 11 cm.",
     materials: [
       "Gamuza",
       "Cuero negro en asas y ribetes",
@@ -44,6 +51,11 @@ export const products: Product[] = [
       "/images/products/escencia/03.jpg",
     ],
     featured: true,
+    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
+    reviews: [
+      { author: "Carolina M.", rating: 5, text: "La gamuza es preciosa y el detalle del toro le da una personalidad única. Llegó impecable en su bolsa de tela." },
+      { author: "Fernanda R.", rating: 5, text: "Se nota el trabajo hecho a mano en cada costura. La uso todos los días." },
+    ],
   },
   {
     slug: "raiz",
@@ -51,9 +63,9 @@ export const products: Product[] = [
     category: "Carteras",
     collection: "Origen",
     price: 76000,
-    shortDescription: "Cartera de gamuza con flecos laterales, tachas y herraje de estrella alada.",
+    shortDescription: "Conecta con la tierra, los oficios y el origen de los materiales. Noble, cálida y auténtica.",
     longDescription:
-      "Raíz es una cartera de gamuza con flecos laterales cortados a mano, solapa con tachas plateadas y herraje de estrella alada al centro. Cadena plateada con tramo de cuero para llevarla al hombro. Disponible en café y en negro.",
+      "Raíz conecta con la tierra, los oficios y el origen de los materiales: noble, cálida y auténtica. Cartera de gamuza con flecos laterales cortados a mano y solapa con tachas plateadas; el sello de la estrella con alas es su detalle más juvenil y le da una onda mística única. Cadena plateada con tramo de cuero para llevarla al hombro. Disponible en café y en negro.",
     materials: [
       "Gamuza",
       "Flecos de cuero cortados a mano",
@@ -68,6 +80,11 @@ export const products: Product[] = [
     fabricationTime: "2 a 3 semanas",
     images: ["/images/products/raiz/01.jpg", "/images/products/raiz/02.jpg"],
     featured: true,
+    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
+    reviews: [
+      { author: "Javiera P.", rating: 5, text: "Los flecos y la estrella la hacen única. Me la piden hasta en la calle." },
+      { author: "Constanza L.", rating: 4, text: "Hermosa y de muy buena calidad. La cadena es firme y el cuero huele a nuevo." },
+    ],
   },
   {
     slug: "legado-i",
@@ -77,7 +94,7 @@ export const products: Product[] = [
     price: 69000,
     shortDescription: "Bolso XL de gamuza bordó con ojales plateados y asas de cadena y cuero.",
     longDescription:
-      "Legado I es un bolso amplio de gamuza en tono bordó, con grandes ojales plateados a los costados y asas combinadas de cadena metálica y cuero. Un formato generoso para el día a día. Medidas: 40 × 26 cm.",
+      "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado I es un bolso amplio de gamuza en tono bordó, con grandes ojales plateados a los costados y asas combinadas de cadena metálica y cuero. Un formato generoso para el día a día. Medidas: 40 × 26 cm.",
     materials: [
       "Gamuza tono bordó",
       "Ojales en metal plateado",
@@ -91,6 +108,10 @@ export const products: Product[] = [
     fabricationTime: "2 a 3 semanas",
     images: ["/images/products/legado-i/01.jpg"],
     featured: true,
+    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
+    reviews: [
+      { author: "Daniela S.", rating: 5, text: "Enorme y elegante a la vez. Me cabe todo y la gamuza bordó es aún más linda en persona." },
+    ],
   },
   {
     slug: "legado-ii",
@@ -100,7 +121,7 @@ export const products: Product[] = [
     price: 82000,
     shortDescription: "Bolso XL de cuero cognac con ojales plateados y asas de mano y bandolera.",
     longDescription:
-      "Legado II toma el mismo lenguaje de ojales que Legado I, esta vez en cuero liso tono cognac. Asas de mano cortas más correa bandolera desmontable, para llevarlo al hombro o cruzado. Medidas: 40 × 30 cm, fuelle de 8-3 cm.",
+      "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado II toma el mismo lenguaje de ojales que Legado I, esta vez en cuero liso tono cognac. Asas de mano cortas más correa bandolera desmontable, para llevarlo al hombro o cruzado. Medidas: 40 × 30 cm, fuelle de 8-3 cm.",
     materials: [
       "Cuero liso tono cognac",
       "Ojales en metal plateado",
@@ -114,6 +135,10 @@ export const products: Product[] = [
     fabricationTime: "2 a 3 semanas",
     images: ["/images/products/legado-ii/01.jpg", "/images/products/legado-ii/02.jpg"],
     featured: true,
+    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
+    reviews: [
+      { author: "Paula V.", rating: 5, text: "El cuero cognac es de primera. Perfecto para el trabajo, entra hasta el notebook." },
+    ],
   },
   {
     slug: "alba",
@@ -128,6 +153,10 @@ export const products: Product[] = [
     careInstructions: ["Limpiar con paño seco y suave.", "Evitar humedad directa."],
     fabricationTime: "1 a 2 semanas",
     images: ["/images/products/alba/01.jpg"],
+    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
+    reviews: [
+      { author: "Isidora G.", rating: 5, text: "Chiquita pero entra todo lo esencial. La cadena plateada es un detallazo." },
+    ],
   },
   {
     slug: "cinturon-cuero",
@@ -135,15 +164,25 @@ export const products: Product[] = [
     category: "Accesorios",
     collection: "Origen",
     price: 35000,
-    shortDescription: "Cinturón de cuero hecho a mano, hebilla en metal cepillado.",
+    shortDescription: "Cinturón de cuero café con tachas plateadas y costura en contraste.",
     longDescription:
-      "Un accesorio simple pero exigente en su ejecución: cuero curtido vegetal trabajado a mano, con hebilla en metal cepillado. Una pieza que acompaña por años.",
-    materials: ["Cuero curtido vegetal", "Hebilla en metal cepillado"],
+      "Un accesorio simple pero exigente en su ejecución: cuero café trabajado a mano, con tachas plateadas, costura en contraste y hebilla metálica. Una pieza que acompaña por años.",
+    materials: ["Cuero café", "Tachas plateadas", "Hebilla metálica"],
     careInstructions: ["Limpiar con paño seco.", "No doblar en el mismo punto de forma prolongada."],
     fabricationTime: "1 semana",
-    images: ["/images/products/cinturon-cuero/01.svg"],
+    images: ["/images/products/cinturon-cuero/01.jpg"],
+    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
+    reviews: [
+      { author: "Matías H.", rating: 5, text: "Grueso, firme y con detalles que no se ven en cinturones de tienda. Excelente compra." },
+    ],
   },
 ];
+
+export function getAverageRating(product: Product): number {
+  if (!product.reviews.length) return 0;
+  const sum = product.reviews.reduce((acc, r) => acc + r.rating, 0);
+  return Math.round((sum / product.reviews.length) * 10) / 10;
+}
 
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);

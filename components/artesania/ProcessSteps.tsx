@@ -8,27 +8,27 @@ const STEPS = [
   {
     title: "Selección del cuero",
     text: "Cada piel se revisa a mano, descartando cualquier imperfección que comprometa la pieza final.",
-    image: "/images/artesania/seleccion.svg",
+    image: "/images/artesania/seleccion.jpg",
   },
   {
-    title: "Corte manual",
-    text: "Los patrones se trazan y cortan uno por uno, sin troqueles industriales.",
-    image: "/images/artesania/corte.svg",
+    title: "Corte y armado",
+    text: "Los patrones se trazan, cortan y arman uno por uno, golpe a golpe, sin troqueles industriales.",
+    image: "/images/artesania/corte.jpg",
   },
   {
     title: "Costura",
-    text: "Costura a mano o a máquina plana, reforzando cada punto de tensión.",
-    image: "/images/artesania/costura.svg",
+    text: "Costura reforzada en cada punto de tensión, con hilo en contraste cosido con calma.",
+    image: "/images/artesania/costura.jpg",
   },
   {
-    title: "Terminaciones",
-    text: "Bordes pulidos y teñidos a mano, uno por uno, hasta quedar parejos.",
-    image: "/images/artesania/terminaciones.svg",
+    title: "Herrajes y terminaciones",
+    text: "Argollas, mosquetones y remaches se colocan a mano, pieza por pieza.",
+    image: "/images/artesania/terminaciones.jpg",
   },
   {
     title: "Control de calidad",
     text: "Cada pieza se revisa antes de salir del taller. Si no cumple el estándar, no sale a la venta.",
-    image: "/images/artesania/control-calidad.svg",
+    image: "/images/artesania/control-calidad.jpg",
   },
 ];
 
