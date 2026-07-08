@@ -18,7 +18,7 @@ export default function CategoryFilter({ active, onChange }: CategoryFilterProps
           type="button"
           aria-pressed={active === opt}
           onClick={() => onChange(opt)}
-          className={`px-5 py-2 text-sm tracking-wide border transition-colors duration-300 ${
+          className={`px-5 py-2 text-sm tracking-wide border [transition:background-color_200ms_ease,border-color_200ms_ease,color_200ms_ease,transform_140ms_var(--ease-out-strong)] active:scale-[0.97] ${
             active === opt
               ? "bg-negro text-blanco border-negro"
               : "bg-transparent text-negro border-negro/20 hover:border-negro"

@@ -21,7 +21,7 @@ export default function WhatsAppButton({ productName, slug, className = "" }: Wh
     <button
       type="button"
       onClick={handleClick}
-      className={`inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm tracking-wide uppercase bg-negro text-blanco hover:bg-cafe-cuero transition-colors duration-300 ${className}`}
+      className={`inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm tracking-wide uppercase bg-negro text-blanco hover:bg-burdeo [transition:background-color_200ms_ease,transform_160ms_var(--ease-out-strong)] active:scale-[0.97] ${className}`}
     >
       Comprar por WhatsApp
     </button>

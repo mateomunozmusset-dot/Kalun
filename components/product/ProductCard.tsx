@@ -22,7 +22,7 @@ export default function ProductCard({ product }: { product: Product }) {
         </span>
         <Link
           href={`/productos/${product.slug}`}
-          className="mt-3 text-xs uppercase tracking-wide underline underline-offset-4 decoration-cafe-cuero w-fit"
+          className="mt-3 text-xs uppercase tracking-wide underline underline-offset-4 decoration-burdeo w-fit transition-colors duration-200 hover:text-burdeo"
         >
           Ver producto
         </Link>

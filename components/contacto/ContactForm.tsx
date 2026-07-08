@@ -47,7 +47,7 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
           required
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="border border-negro/20 px-4 py-3 bg-transparent focus:border-cafe-cuero"
+          className="border border-negro/20 px-4 py-3 bg-transparent focus:border-burdeo"
         />
       </div>
 
@@ -60,7 +60,7 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
           name="email"
           type="email"
           required
-          className="border border-negro/20 px-4 py-3 bg-transparent focus:border-cafe-cuero"
+          className="border border-negro/20 px-4 py-3 bg-transparent focus:border-burdeo"
         />
       </div>
 
@@ -74,14 +74,14 @@ export default function ContactForm({ initialMessage = "" }: { initialMessage?: 
           required
           rows={5}
           defaultValue={initialMessage}
-          className="border border-negro/20 px-4 py-3 bg-transparent focus:border-cafe-cuero resize-none"
+          className="border border-negro/20 px-4 py-3 bg-transparent focus:border-burdeo resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === "sending"}
-        className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm tracking-wide uppercase bg-negro text-blanco hover:bg-cafe-cuero transition-colors duration-300 disabled:opacity-60"
+        className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm tracking-wide uppercase bg-negro text-blanco hover:bg-burdeo [transition:background-color_200ms_ease,transform_160ms_var(--ease-out-strong)] active:scale-[0.97] disabled:opacity-60 disabled:active:scale-100"
       >
         {status === "sending" && <Loader2 className="animate-spin" size={16} />}
         {status === "sending" ? "Enviando..." : "Enviar mensaje"}

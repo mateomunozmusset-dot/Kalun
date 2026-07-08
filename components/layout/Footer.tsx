@@ -62,11 +62,11 @@ export default function Footer() {
               type="email"
               required
               placeholder="tu@email.com"
-              className="flex-1 min-w-0 bg-transparent border border-blanco/30 px-3 py-2 text-sm placeholder:text-blanco/40 focus:border-cafe-cuero"
+              className="flex-1 min-w-0 bg-transparent border border-blanco/30 px-3 py-2 text-sm placeholder:text-blanco/40 focus:border-arena transition-colors duration-200"
             />
             <button
               type="submit"
-              className="px-4 py-2 text-sm uppercase tracking-wide bg-cafe-cuero text-blanco"
+              className="px-4 py-2 text-sm uppercase tracking-wide bg-burdeo text-blanco [transition:background-color_200ms_ease,transform_160ms_var(--ease-out-strong)] hover:bg-burdeo/85 active:scale-[0.97]"
             >
               Unirme
             </button>

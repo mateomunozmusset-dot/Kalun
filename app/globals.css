@@ -58,6 +58,26 @@ h4 {
   line-height: 1.05;
 }
 
-/* Reserved: intentionally no prefers-reduced-motion overrides in CSS.
-   All motion is handled per-component via Framer Motion's useReducedMotion()
-   in AnimatedSection, so nothing here needs disabling. */
+/* =============================================================
+   Reduced motion (emil-design-eng): quitar movimiento y scroll suave,
+   pero conservar transiciones de color/opacidad que ayudan a comprender.
+   El movimiento de entrada ya se atenúa por componente con useReducedMotion().
+   ============================================================= */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  /* Neutraliza los micro-movimientos por transform (zoom en hover, press) */
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+  .group:hover .group-hover\:scale-105,
+  .group:hover .group-hover\:scale-\[1\.04\] {
+    transform: none !important;
+  }
+  [class*="active:scale"]:active {
+    transform: none !important;
+  }
+}
