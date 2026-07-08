@@ -46,6 +46,35 @@ export const products: Product[] = [
     featured: true,
   },
   {
+    // Producto nuevo — PRECIO PROVISIONAL, confirmar con el cliente.
+    slug: "travesia",
+    name: "Travesía",
+    category: "Carteras",
+    collection: "Origen",
+    price: 88000, // PLACEHOLDER — confirmar precio real
+    shortDescription: "Para quienes disfrutan descubrir nuevos caminos. Cómoda, versátil y muy amplia.",
+    longDescription:
+      "Travesía es para quienes disfrutan descubrir nuevos caminos. Cómoda, versátil y diseñada para acompañar cada viaje: muy amplia, te permite llevar todo lo que necesitas. Cuero en tono gris con detalles y borlas en negro, asas de mano y correa bandolera desmontable para llevarla al hombro o cruzada.",
+    materials: [
+      "Cuero tono gris",
+      "Detalles y borlas en cuero negro",
+      "Asas de mano y correa bandolera desmontable",
+      "Herrajes en metal plateado",
+    ],
+    careInstructions: [
+      "Limpiar con paño seco y suave.",
+      "Aplicar cera nutriente cada 3-4 meses.",
+      "Evitar exposición prolongada al sol.",
+    ],
+    fabricationTime: "2 a 3 semanas",
+    images: [
+      "/images/products/travesia/01.jpg",
+      "/images/products/travesia/02.jpg",
+      "/images/products/travesia/03.jpg",
+    ],
+    featured: true,
+  },
+  {
     slug: "raiz",
     name: "Raíz",
     category: "Carteras",

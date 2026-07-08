@@ -4,7 +4,14 @@ import SectionHeading from "@/components/shared/SectionHeading";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import { SOCIAL } from "@/lib/constants";
 
-const IMAGES = Array.from({ length: 6 }, (_, i) => `/images/instagram/ig-0${i + 1}.svg`);
+const IMAGES = [
+  "/images/products/escencia/01.jpg",
+  "/images/lifestyle/tote-negro-01.jpg",
+  "/images/products/raiz/01.jpg",
+  "/images/lifestyle/cartera-cel-02.jpg",
+  "/images/products/travesia/03.jpg",
+  "/images/lifestyle/tote-negro-02.jpg",
+];
 
 export default function InstagramGrid() {
   return (
