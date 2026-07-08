@@ -1,7 +1,6 @@
 import Image from "next/image";
 import SectionHeading from "@/components/shared/SectionHeading";
 import AnimatedSection from "@/components/shared/AnimatedSection";
-import StarRating from "@/components/shared/StarRating";
 
 // Reseñas de muestra — reemplazar por opiniones reales de clientes.
 const TESTIMONIALS = [
@@ -9,18 +8,15 @@ const TESTIMONIALS = [
     quote:
       "Lo que más me gustó de KALUN es que se nota que alguien pensó en cada detalle. No es solo lindo, es cómodo y dura.",
     author: "Clienta KALUN",
-    rating: 5,
   },
   {
     quote:
       "Pedí un bolso hace más de un año y sigue como el primer día. Se siente una pieza hecha para durar, no para una temporada.",
     author: "Cliente KALUN",
-    rating: 5,
   },
   {
     quote: "El detalle de las costuras y el olor a cuero real cuando lo recibí — ahí supe que era distinto.",
     author: "Clienta KALUN",
-    rating: 5,
   },
 ];
 
@@ -48,9 +44,11 @@ export default function Testimonials() {
             {TESTIMONIALS.map((t, i) => (
               <AnimatedSection key={i} delay={i * 0.08}>
                 <figure className="bg-blanco p-7 flex flex-col gap-4 border border-negro/10">
-                  <StarRating rating={t.rating} size={13} />
+                  <span aria-hidden className="text-3xl text-cafe-cuero font-display leading-none">
+                    &ldquo;
+                  </span>
                   <blockquote className="text-negro/80 text-base leading-relaxed">
-                    “{t.quote}”
+                    {t.quote}
                   </blockquote>
                   <figcaption className="text-sm text-negro/50 border-t border-negro/10 pt-3">
                     {t.author}

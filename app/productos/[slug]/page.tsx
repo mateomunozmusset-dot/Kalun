@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { getProductBySlug, getRelatedProducts, products } from "@/data/products";
 import ProductGallery from "@/components/product/ProductGallery";
 import ProductInfo from "@/components/product/ProductInfo";
-import ProductReviews from "@/components/product/ProductReviews";
 import RelatedProducts from "@/components/product/RelatedProducts";
 
 export function generateStaticParams() {
@@ -39,9 +38,6 @@ export default async function ProductoPage({ params }: { params: Promise<{ slug:
         <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
           <ProductGallery images={product.images} name={product.name} />
           <ProductInfo product={product} />
-        </div>
-        <div className="max-w-[1600px] mx-auto mt-16 md:mt-24">
-          <ProductReviews slug={product.slug} seedReviews={product.reviews} />
         </div>
       </div>
       <RelatedProducts products={related} />

@@ -1,12 +1,6 @@
 export type Category = "Bolsos" | "Carteras" | "Bandoleras" | "Accesorios";
 export type Collection = "Origen";
 
-export interface Review {
-  author: string;
-  rating: number; // 1 a 5
-  text: string;
-}
-
 export interface Product {
   slug: string;
   name: string;
@@ -20,7 +14,6 @@ export interface Product {
   fabricationTime: string;
   images: string[]; // rutas bajo /images/products/{slug}/
   featured?: boolean;
-  reviews: Review[];
 }
 
 export const products: Product[] = [
@@ -51,11 +44,6 @@ export const products: Product[] = [
       "/images/products/escencia/03.jpg",
     ],
     featured: true,
-    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
-    reviews: [
-      { author: "Carolina M.", rating: 5, text: "La gamuza es preciosa y el detalle del toro le da una personalidad única. Llegó impecable en su bolsa de tela." },
-      { author: "Fernanda R.", rating: 5, text: "Se nota el trabajo hecho a mano en cada costura. La uso todos los días." },
-    ],
   },
   {
     slug: "raiz",
@@ -80,11 +68,6 @@ export const products: Product[] = [
     fabricationTime: "2 a 3 semanas",
     images: ["/images/products/raiz/01.jpg", "/images/products/raiz/02.jpg"],
     featured: true,
-    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
-    reviews: [
-      { author: "Javiera P.", rating: 5, text: "Los flecos y la estrella la hacen única. Me la piden hasta en la calle." },
-      { author: "Constanza L.", rating: 4, text: "Hermosa y de muy buena calidad. La cadena es firme y el cuero huele a nuevo." },
-    ],
   },
   {
     slug: "legado-i",
@@ -108,10 +91,6 @@ export const products: Product[] = [
     fabricationTime: "2 a 3 semanas",
     images: ["/images/products/legado-i/01.jpg"],
     featured: true,
-    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
-    reviews: [
-      { author: "Daniela S.", rating: 5, text: "Enorme y elegante a la vez. Me cabe todo y la gamuza bordó es aún más linda en persona." },
-    ],
   },
   {
     slug: "legado-ii",
@@ -135,10 +114,6 @@ export const products: Product[] = [
     fabricationTime: "2 a 3 semanas",
     images: ["/images/products/legado-ii/01.jpg", "/images/products/legado-ii/02.jpg"],
     featured: true,
-    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
-    reviews: [
-      { author: "Paula V.", rating: 5, text: "El cuero cognac es de primera. Perfecto para el trabajo, entra hasta el notebook." },
-    ],
   },
   {
     slug: "alba",
@@ -153,10 +128,6 @@ export const products: Product[] = [
     careInstructions: ["Limpiar con paño seco y suave.", "Evitar humedad directa."],
     fabricationTime: "1 a 2 semanas",
     images: ["/images/products/alba/01.jpg"],
-    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
-    reviews: [
-      { author: "Isidora G.", rating: 5, text: "Chiquita pero entra todo lo esencial. La cadena plateada es un detallazo." },
-    ],
   },
   {
     slug: "cinturon-cuero",
@@ -171,18 +142,8 @@ export const products: Product[] = [
     careInstructions: ["Limpiar con paño seco.", "No doblar en el mismo punto de forma prolongada."],
     fabricationTime: "1 semana",
     images: ["/images/products/cinturon-cuero/01.jpg"],
-    // Reseñas de muestra — reemplazar por opiniones reales cuando lleguen.
-    reviews: [
-      { author: "Matías H.", rating: 5, text: "Grueso, firme y con detalles que no se ven en cinturones de tienda. Excelente compra." },
-    ],
   },
 ];
-
-export function getAverageRating(product: Product): number {
-  if (!product.reviews.length) return 0;
-  const sum = product.reviews.reduce((acc, r) => acc + r.rating, 0);
-  return Math.round((sum / product.reviews.length) * 10) / 10;
-}
 
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);

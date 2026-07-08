@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getAverageRating, type Product } from "@/data/products";
-import StarRating from "@/components/shared/StarRating";
+import type { Product } from "@/data/products";
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
@@ -18,9 +17,6 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="flex flex-col gap-1">
         <h3 className="text-lg">{product.name}</h3>
         <p className="text-sm text-negro/60">{product.shortDescription}</p>
-        {product.reviews.length > 0 && (
-          <StarRating rating={getAverageRating(product)} size={12} className="mt-1" />
-        )}
         <span className="text-sm text-cafe-cuero mt-1">
           ${product.price.toLocaleString("es-CL")} CLP
         </span>
