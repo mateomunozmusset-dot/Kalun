@@ -6,11 +6,11 @@ import { SOCIAL } from "@/lib/constants";
 
 const IMAGES = [
   "/images/products/escencia/01.jpg",
-  "/images/lifestyle/tote-negro-01.jpg",
+  "/images/products/escencia/06.jpg",
   "/images/products/raiz/01.jpg",
   "/images/lifestyle/cartera-cel-02.jpg",
-  "/images/products/travesia/03.jpg",
-  "/images/lifestyle/tote-negro-02.jpg",
+  "/images/products/travesia/02.jpg",
+  "/images/testimonials/clienta-01.jpg",
 ];
 
 export default function InstagramGrid() {

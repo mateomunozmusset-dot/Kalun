@@ -25,7 +25,7 @@ export const products: Product[] = [
     price: 78000,
     shortDescription: "La pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día.",
     longDescription:
-      "Escencia es la pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día. Cartera de gamuza en tono ladrillo con asas y ribetes de cuero negro; el herraje de cabeza de toro en metal plateado le agrega identidad y personalidad. Incluye borlas de cuero y correa bandolera ajustable y desmontable, para usarla de mano o cruzada. Medidas: 25 × 21 cm, fuelle de 11 cm.",
+      "Escencia es la pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día. Cartera de gamuza con asas y ribetes de cuero negro; el herraje de cabeza de toro en metal plateado le agrega identidad y personalidad. Incluye borlas de cuero y correa bandolera ajustable y desmontable, para usarla de mano o cruzada. Medidas: 25 × 21 cm, fuelle de 11 cm. Disponible en tono ladrillo y en gris.",
     materials: [
       "Gamuza",
       "Cuero negro en asas y ribetes",
@@ -42,6 +42,9 @@ export const products: Product[] = [
       "/images/products/escencia/01.jpg",
       "/images/products/escencia/02.jpg",
       "/images/products/escencia/03.jpg",
+      "/images/products/escencia/04.jpg",
+      "/images/products/escencia/05.jpg",
+      "/images/products/escencia/06.jpg",
     ],
     featured: true,
   },
@@ -54,23 +57,21 @@ export const products: Product[] = [
     price: 88000, // PLACEHOLDER — confirmar precio real
     shortDescription: "Para quienes disfrutan descubrir nuevos caminos. Cómoda, versátil y muy amplia.",
     longDescription:
-      "Travesía es para quienes disfrutan descubrir nuevos caminos. Cómoda, versátil y diseñada para acompañar cada viaje: muy amplia, te permite llevar todo lo que necesitas. Cuero en tono gris con detalles y borlas en negro, asas de mano y correa bandolera desmontable para llevarla al hombro o cruzada.",
+      "Travesía es para quienes disfrutan descubrir nuevos caminos. Cómoda, versátil y diseñada para acompañar cada viaje: muy amplia, te permite llevar todo lo que necesitas. Tote de gamuza y cuero en negro, de líneas limpias, con asas largas para llevarla al hombro.",
     materials: [
-      "Cuero tono gris",
-      "Detalles y borlas en cuero negro",
-      "Asas de mano y correa bandolera desmontable",
+      "Gamuza y cuero negro",
+      "Asas largas al hombro",
       "Herrajes en metal plateado",
     ],
     careInstructions: [
-      "Limpiar con paño seco y suave.",
-      "Aplicar cera nutriente cada 3-4 meses.",
-      "Evitar exposición prolongada al sol.",
+      "Cepillar la gamuza en seco con cepillo suave.",
+      "Evitar humedad directa.",
+      "Guardar en su bolsa de tela cuando no se use.",
     ],
     fabricationTime: "2 a 3 semanas",
     images: [
       "/images/products/travesia/01.jpg",
       "/images/products/travesia/02.jpg",
-      "/images/products/travesia/03.jpg",
     ],
     featured: true,
   },

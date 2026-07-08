@@ -44,3 +44,12 @@ Compra = botón WhatsApp (+56 9 6156 7905). Sin carrito/checkout.
 - **Reseñas de clientas reales**: hoy NO hay sistema de reseñas (se quitó); si se quiere que los usuarios dejen reseñas visibles para todos, hace falta un backend.
 - **Logo en navbar**: usa el logo burdeo (sello). Datos de contacto/redes: Instagram `@kalun.cl` ok; sin Facebook.
 - **Token de Vercel**: si el cliente lo borra por seguridad, hay que generar uno nuevo para desplegar por CLI.
+
+## Próximos pasos sugeridos (prioridad)
+1. **Confirmar precios reales** que están provisionales (Travesía $88.000) y los **tiempos de fabricación**.
+2. **Fotos reales** donde hoy hay IA/placeholder: galería de Instagram (4 son IA) y cualquier producto sin foto de estudio propia.
+3. **Datos de contacto/negocio finales**: confirmar dirección para el mapa de Contacto (hoy genérico), y si habrá Facebook.
+4. **Reseñas reales de clientas**: decidir si se quiere sistema de reseñas visible para todos (requiere backend, ej. una base de datos o un servicio como Supabase/Formspree).
+5. **Newsletter/formulario de contacto**: hoy simulados (sin envío real). Conectar a un servicio de email (ej. Resend) cuando se quiera recibir los mensajes.
+6. **Reconectar GitHub→Vercel** (opcional) para que los deploys sean automáticos y no dependan del token/CLI.
+7. **Completar catálogo**: agregar el resto de productos del documento de marca (Alma, Génesis/mochila, textiles: ponchos y ruanas) si se quieren vender en el sitio.
