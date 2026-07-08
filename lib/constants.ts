@@ -17,10 +17,11 @@ export const CONTACT = {
   address: "Chile",
 };
 
-// PLACEHOLDER: redes sociales reales.
+// Redes sociales.
 export const SOCIAL = {
-  instagram: "https://instagram.com/kalun",
-  facebook: "https://facebook.com/kalun",
+  instagram: "https://www.instagram.com/kalun.cl",
+  // PLACEHOLDER: reemplazar por el Facebook real (o quitar si no hay).
+  facebook: "https://www.instagram.com/kalun.cl",
 };
 
 // PLACEHOLDER: coordenadas para el mapa de contacto.

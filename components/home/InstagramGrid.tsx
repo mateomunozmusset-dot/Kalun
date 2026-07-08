@@ -11,7 +11,7 @@ export default function InstagramGrid() {
     <section className="py-24 md:py-32 px-6 md:px-10">
       <div className="max-w-[1600px] mx-auto">
         <AnimatedSection>
-          <SectionHeading eyebrow="Síguenos" title="@kalun en Instagram" />
+          <SectionHeading eyebrow="Síguenos" title="@kalun.cl en Instagram" />
         </AnimatedSection>
 
         <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">

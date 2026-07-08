@@ -44,3 +44,6 @@ next-env.d.ts
 /FOTOS-AQUI/
 # symlink local de skills (los archivos reales van en .agents/)
 /.claude/
+
+.vercel
+.env*

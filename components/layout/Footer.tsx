@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { InstagramIcon, FacebookIcon } from "@/components/shared/SocialIcons";
+import { InstagramIcon } from "@/components/shared/SocialIcons";
 import { BRAND, CONTACT, SOCIAL } from "@/lib/constants";
 
 export default function Footer() {
@@ -19,11 +19,14 @@ export default function Footer() {
           />
           <p className="text-sm text-blanco/60 max-w-xs">{BRAND.tagline}</p>
           <div className="flex gap-4 mt-2">
-            <a href={SOCIAL.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a
+              href={SOCIAL.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram de KALUN"
+              className="inline-flex [transition:transform_160ms_var(--ease-out-strong),opacity_200ms_ease] hover:opacity-70 active:scale-90"
+            >
               <InstagramIcon size={18} />
-            </a>
-            <a href={SOCIAL.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <FacebookIcon size={18} />
             </a>
           </div>
         </div>
