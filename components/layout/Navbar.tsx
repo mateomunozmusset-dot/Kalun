@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -37,8 +38,15 @@ export default function Navbar() {
         }`}
       >
         <nav className="max-w-[1600px] mx-auto flex items-center justify-between px-6 md:px-10 py-5">
-          <Link href="/" className={`text-xl tracking-[0.2em] font-display transition-colors duration-300 ${textColor}`}>
-            KALUN
+          <Link href="/" aria-label="KALUN — inicio" className="flex items-center">
+            <Image
+              src="/images/brand/logo-burdeo.png"
+              alt="KALUN"
+              width={112}
+              height={112}
+              priority
+              className="h-12 w-12 md:h-14 md:w-14"
+            />
           </Link>
 
           <ul className="hidden md:flex items-center gap-10">

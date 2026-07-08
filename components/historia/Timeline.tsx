@@ -4,8 +4,8 @@ import AnimatedSection from "@/components/shared/AnimatedSection";
 const MILESTONES = [
   { year: "2021", text: "Primeras piezas hechas a mano en un taller pequeño, para amigos y familia." },
   { year: "2022", text: "Nace la colección Origen y el nombre KALUN, con foco en durabilidad y diseño simple." },
-  { year: "2023", text: "Se suma la colección Clásicos, pensada para el uso diario." },
-  { year: "2024", text: "Primera Edición Especial en tiradas limitadas, con detalles trabajados a mano." },
+  { year: "2023", text: "La colección Origen crece y llega a clientes en distintas partes de Chile." },
+  { year: "2024", text: "Sumamos el diseño a medida: piezas únicas hechas a mano según cada cliente." },
   { year: "Hoy", text: "Seguimos produciendo en lotes pequeños, sin perder el control artesanal de cada pieza." },
 ];
 
