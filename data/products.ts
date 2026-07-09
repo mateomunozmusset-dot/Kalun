@@ -22,7 +22,7 @@ export const products: Product[] = [
     name: "Escencia",
     category: "Carteras",
     collection: "Origen",
-    price: 78000,
+    price: 85000,
     shortDescription: "La pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día.",
     longDescription:
       "Escencia es la pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día. Cartera de gamuza con asas y ribetes de cuero negro; el herraje de cabeza de toro en metal plateado le agrega identidad y personalidad. Incluye borlas de cuero y correa bandolera ajustable y desmontable, para usarla de mano o cruzada. Medidas: 25 × 21 cm, fuelle de 11 cm. Disponible en tono ladrillo y en gris.",
@@ -54,7 +54,7 @@ export const products: Product[] = [
     name: "Travesía",
     category: "Carteras",
     collection: "Origen",
-    price: 88000, // PLACEHOLDER — confirmar precio real
+    price: 89000,
     shortDescription: "Para quienes disfrutan descubrir nuevos caminos. Cómoda, versátil y muy amplia.",
     longDescription:
       "Travesía es para quienes disfrutan descubrir nuevos caminos. Cómoda, versátil y diseñada para acompañar cada viaje: muy amplia, te permite llevar todo lo que necesitas. Tote de gamuza y cuero en negro, de líneas limpias, con asas largas para llevarla al hombro.",
@@ -80,7 +80,7 @@ export const products: Product[] = [
     name: "Raíz",
     category: "Carteras",
     collection: "Origen",
-    price: 76000,
+    price: 79000,
     shortDescription: "Conecta con la tierra, los oficios y el origen de los materiales. Noble, cálida y auténtica.",
     longDescription:
       "Raíz conecta con la tierra, los oficios y el origen de los materiales: noble, cálida y auténtica. Cartera de gamuza con flecos laterales cortados a mano y solapa con tachas plateadas; el sello de la estrella con alas es su detalle más juvenil y le da una onda mística única. Cadena plateada con tramo de cuero para llevarla al hombro. Disponible en café y en negro.",
@@ -104,7 +104,7 @@ export const products: Product[] = [
     name: "Legado I",
     category: "Bolsos",
     collection: "Origen",
-    price: 69000,
+    price: 86000,
     shortDescription: "Bolso XL de gamuza bordó con ojales plateados y asas de cadena y cuero.",
     longDescription:
       "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado I es un bolso amplio de gamuza en tono bordó, con grandes ojales plateados a los costados y asas combinadas de cadena metálica y cuero. Un formato generoso para el día a día. Medidas: 40 × 26 cm.",
@@ -127,7 +127,7 @@ export const products: Product[] = [
     name: "Legado II",
     category: "Bolsos",
     collection: "Origen",
-    price: 82000,
+    price: 86000,
     shortDescription: "Bolso XL de cuero cognac con ojales plateados y asas de mano y bandolera.",
     longDescription:
       "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado II toma el mismo lenguaje de ojales que Legado I, esta vez en cuero liso tono cognac. Asas de mano cortas más correa bandolera desmontable, para llevarlo al hombro o cruzado. Medidas: 40 × 30 cm, fuelle de 8-3 cm.",
@@ -150,7 +150,7 @@ export const products: Product[] = [
     name: "Alba",
     category: "Bandoleras",
     collection: "Origen",
-    price: 68000,
+    price: 72000,
     shortDescription: "Bandolera pequeña de cuero negro liso, cierre superior y cadena plateada.",
     longDescription:
       "Alba es una bandolera compacta de cuero negro liso, con cierre superior y cadena plateada desmontable para llevarla cruzada. Un formato minimalista para lo esencial del día.",
@@ -164,7 +164,7 @@ export const products: Product[] = [
     name: "Cinturón de Cuero",
     category: "Accesorios",
     collection: "Origen",
-    price: 35000,
+    price: 42000,
     shortDescription: "Cinturón de cuero café con tachas plateadas y costura en contraste.",
     longDescription:
       "Un accesorio simple pero exigente en su ejecución: cuero café trabajado a mano, con tachas plateadas, costura en contraste y hebilla metálica. Una pieza que acompaña por años.",
