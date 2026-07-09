@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <EssenceGrid />
       <CollectionsShowcase />
       <FeaturedProducts />
       <HistoryTeaser />
       <CraftsmanshipProcess />
       <Testimonials />
       <InstagramGrid />
+      <EssenceGrid />
     </>
   );
 }
