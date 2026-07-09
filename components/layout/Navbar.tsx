@@ -11,7 +11,6 @@ const NAV_LINKS = [
   { href: "/productos", label: "Colección" },
   { href: "/historia", label: "Historia" },
   { href: "/artesania", label: "Artesanía" },
-  { href: "/contacto", label: "Contacto" },
 ];
 
 export default function Navbar() {
