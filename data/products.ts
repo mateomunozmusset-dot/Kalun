@@ -37,7 +37,7 @@ export const products: Product[] = [
       "Evitar humedad directa.",
       "Guardar en su bolsa de tela cuando no se use.",
     ],
-    fabricationTime: "2 a 3 semanas",
+    fabricationTime: "10 a 15 dias Habiles",
     images: [
       "/images/products/escencia/01.jpg",
       "/images/products/escencia/02.jpg",
@@ -68,7 +68,7 @@ export const products: Product[] = [
       "Evitar humedad directa.",
       "Guardar en su bolsa de tela cuando no se use.",
     ],
-    fabricationTime: "2 a 3 semanas",
+    fabricationTime: "10 a 15 dias Habiles",
     images: [
       "/images/products/travesia/01.jpg",
       "/images/products/travesia/02.jpg",
@@ -95,7 +95,7 @@ export const products: Product[] = [
       "Peinar los flecos con los dedos, sin tirar.",
       "Evitar humedad directa.",
     ],
-    fabricationTime: "2 a 3 semanas",
+    fabricationTime: "10 a 15 dias Habiles",
     images: ["/images/products/raiz/01.jpg", "/images/products/raiz/02.jpg"],
     featured: true,
   },
@@ -118,7 +118,7 @@ export const products: Product[] = [
       "Evitar humedad directa.",
       "Guardar en su bolsa de tela cuando no se use.",
     ],
-    fabricationTime: "2 a 3 semanas",
+    fabricationTime: "10 a 15 dias Habiles",
     images: ["/images/products/legado-i/01.jpg"],
     featured: true,
   },
@@ -141,7 +141,7 @@ export const products: Product[] = [
       "Aplicar cera nutriente cada 3-4 meses.",
       "Evitar exposición prolongada al sol.",
     ],
-    fabricationTime: "2 a 3 semanas",
+    fabricationTime: "10 a 15 dias Habiles",
     images: ["/images/products/legado-ii/01.jpg", "/images/products/legado-ii/02.jpg"],
     featured: true,
   },
@@ -156,7 +156,7 @@ export const products: Product[] = [
       "Alba es una bandolera compacta de cuero negro liso, con cierre superior y cadena plateada desmontable para llevarla cruzada. Un formato minimalista para lo esencial del día.",
     materials: ["Cuero liso negro", "Cadena plateada desmontable", "Cierre metálico"],
     careInstructions: ["Limpiar con paño seco y suave.", "Evitar humedad directa."],
-    fabricationTime: "1 a 2 semanas",
+    fabricationTime: "10 a 15 dias Habiles",
     images: ["/images/products/alba/01.jpg"],
   },
   {
@@ -170,7 +170,7 @@ export const products: Product[] = [
       "Un accesorio simple pero exigente en su ejecución: cuero café trabajado a mano, con tachas plateadas, costura en contraste y hebilla metálica. Una pieza que acompaña por años.",
     materials: ["Cuero café", "Tachas plateadas", "Hebilla metálica"],
     careInstructions: ["Limpiar con paño seco.", "No doblar en el mismo punto de forma prolongada."],
-    fabricationTime: "1 semana",
+    fabricationTime: "10 a 15 dias Habiles",
     images: ["/images/products/cinturon-cuero/01.jpg"],
   },
   {
@@ -184,7 +184,7 @@ export const products: Product[] = [
       "Un cinturón de cuero hecho a mano, pensado para durar y para cambiar contigo: su hebilla intercambiable permite pasar de un look clásico a uno con más carácter en segundos. Tachas metálicas y costura en contraste.",
     materials: ["Cuero", "Hebilla intercambiable en metal", "Tachas metálicas"],
     careInstructions: ["Limpiar con paño seco.", "No doblar en el mismo punto de forma prolongada."],
-    fabricationTime: "1 semana",
+    fabricationTime: "10 a 15 dias Habiles",
     images: ["/images/products/cinturon-hebilla-intercambiable/01.jpg"],
   },
   {
@@ -202,7 +202,7 @@ export const products: Product[] = [
       "Aplicar cera nutriente cada 3-4 meses.",
       "Evitar exposición prolongada al sol.",
     ],
-    fabricationTime: "2 a 3 semanas",
+    fabricationTime: "10 a 15 dias Habiles",
     images: ["/images/products/genesis/01.jpg"],
     featured: true,
   },
@@ -212,7 +212,7 @@ export const products: Product[] = [
     name: "Poncho de Alpaca y Oveja",
     category: "Textil",
     collection: "Origen",
-    price: 95000, // PLACEHOLDER — confirmar precio real
+    price: 120000, // PLACEHOLDER — confirmar precio real
     shortDescription: "Tejido a telar artesanal por artesanos chilenos, en lana de oveja y alpaca.",
     longDescription:
       "Poncho tejido a telar artesanal por artesanos chilenos, en lana de oveja y alpaca. Una prenda noble y abrigadora, hecha en Chile con el oficio del telar que dio origen a KALUN. Cada pieza es única, con la textura y el carácter del tejido a mano. Disponible en distintos tonos y con capucha.",
@@ -222,7 +222,7 @@ export const products: Product[] = [
       "Secar extendido a la sombra.",
       "No usar secadora ni retorcer.",
     ],
-    fabricationTime: "3 a 4 semanas",
+    fabricationTime: "10 a 15 dias Habiles",
     images: [
       "/images/products/poncho-telar/01.jpg",
       "/images/products/poncho-telar/02.jpg",
