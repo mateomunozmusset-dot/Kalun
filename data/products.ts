@@ -1,4 +1,4 @@
-export type Category = "Bolsos" | "Carteras" | "Bandoleras" | "Accesorios";
+export type Category = "Bolsos" | "Carteras" | "Bandoleras" | "Mochilas" | "Textil" | "Accesorios";
 export type Collection = "Origen";
 
 export interface Product {
@@ -105,7 +105,7 @@ export const products: Product[] = [
     category: "Bolsos",
     collection: "Origen",
     price: 86000,
-    shortDescription: "Bolso XL de gamuza bordó con ojales plateados y asas de cadena y cuero.",
+    shortDescription: "Bolso amplio de gamuza bordó con ojales plateados y asas de cadena y cuero.",
     longDescription:
       "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado I es un bolso amplio de gamuza en tono bordó, con grandes ojales plateados a los costados y asas combinadas de cadena metálica y cuero. Un formato generoso para el día a día. Medidas: 40 × 26 cm.",
     materials: [
@@ -128,7 +128,7 @@ export const products: Product[] = [
     category: "Bolsos",
     collection: "Origen",
     price: 86000,
-    shortDescription: "Bolso XL de cuero cognac con ojales plateados y asas de mano y bandolera.",
+    shortDescription: "Bolso amplio de cuero cognac con ojales plateados y asas de mano y bandolera.",
     longDescription:
       "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado II toma el mismo lenguaje de ojales que Legado I, esta vez en cuero liso tono cognac. Asas de mano cortas más correa bandolera desmontable, para llevarlo al hombro o cruzado. Medidas: 40 × 30 cm, fuelle de 8-3 cm.",
     materials: [
@@ -173,6 +173,63 @@ export const products: Product[] = [
     fabricationTime: "1 semana",
     images: ["/images/products/cinturon-cuero/01.jpg"],
   },
+  {
+    slug: "cinturon-hebilla-intercambiable",
+    name: "Cinturón Hebilla Intercambiable",
+    category: "Accesorios",
+    collection: "Origen",
+    price: 42000,
+    shortDescription: "Cinturón de cuero con hebilla intercambiable, para cambiar de estilo sin cambiar de cinturón.",
+    longDescription:
+      "Un cinturón de cuero hecho a mano, pensado para durar y para cambiar contigo: su hebilla intercambiable permite pasar de un look clásico a uno con más carácter en segundos. Tachas metálicas y costura en contraste.",
+    materials: ["Cuero", "Hebilla intercambiable en metal", "Tachas metálicas"],
+    careInstructions: ["Limpiar con paño seco.", "No doblar en el mismo punto de forma prolongada."],
+    fabricationTime: "1 semana",
+    images: ["/images/products/cinturon-hebilla-intercambiable/01.jpg"],
+  },
+  {
+    slug: "genesis",
+    name: "Génesis",
+    category: "Mochilas",
+    collection: "Origen",
+    price: 110000,
+    shortDescription: "Donde todo comienza: mochila de cuero, compañera de aventuras, cómoda y resistente.",
+    longDescription:
+      "Génesis: donde todo comienza. Inspirada en el origen de los materiales y en el valor del trabajo artesanal, representa el nacimiento de una pieza destinada a acompañar el paso del tiempo con elegancia y autenticidad. Esta mochila será tu compañera de aventuras: cómoda, versátil y resistente, con un diseño único que da personalidad a donde quiera que vayas. Medidas: alto 36 cm, ancho 38 cm, base 11 cm.",
+    materials: ["Cuero", "Hebillas y herrajes metálicos", "Sello KALUN grabado"],
+    careInstructions: [
+      "Limpiar con paño seco y suave.",
+      "Aplicar cera nutriente cada 3-4 meses.",
+      "Evitar exposición prolongada al sol.",
+    ],
+    fabricationTime: "2 a 3 semanas",
+    images: ["/images/products/genesis/01.jpg"],
+    featured: true,
+  },
+  {
+    // PRECIO PROVISIONAL — confirmar con el cliente.
+    slug: "poncho-telar",
+    name: "Poncho de Alpaca y Oveja",
+    category: "Textil",
+    collection: "Origen",
+    price: 95000, // PLACEHOLDER — confirmar precio real
+    shortDescription: "Tejido a telar artesanal por artesanos chilenos, en lana de oveja y alpaca.",
+    longDescription:
+      "Poncho tejido a telar artesanal por artesanos chilenos, en lana de oveja y alpaca. Una prenda noble y abrigadora, hecha en Chile con el oficio del telar que dio origen a KALUN. Cada pieza es única, con la textura y el carácter del tejido a mano. Disponible en distintos tonos y con capucha.",
+    materials: ["Lana de oveja", "Lana de alpaca", "Tejido a telar artesanal"],
+    careInstructions: [
+      "Lavar a mano con agua fría y jabón neutro.",
+      "Secar extendido a la sombra.",
+      "No usar secadora ni retorcer.",
+    ],
+    fabricationTime: "3 a 4 semanas",
+    images: [
+      "/images/products/poncho-telar/01.jpg",
+      "/images/products/poncho-telar/02.jpg",
+      "/images/products/poncho-telar/03.jpg",
+    ],
+    featured: true,
+  },
 ];
 
 export function getProductBySlug(slug: string): Product | undefined {
@@ -187,4 +244,4 @@ export function getFeaturedProducts(): Product[] {
   return products.filter((p) => p.featured);
 }
 
-export const CATEGORIES: Category[] = ["Bolsos", "Carteras", "Bandoleras", "Accesorios"];
+export const CATEGORIES: Category[] = ["Bolsos", "Carteras", "Bandoleras", "Mochilas", "Textil", "Accesorios"];
