@@ -8,7 +8,7 @@ export default function Hero() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="relative h-svh min-h-[640px] w-full flex items-center justify-center overflow-hidden bg-[#5c1f28] text-blanco">
+    <section className="relative h-svh min-h-[640px] w-full flex items-center justify-center overflow-hidden bg-[#611d26] text-blanco">
       <motion.div
         initial={reduced ? { opacity: 1 } : { opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
