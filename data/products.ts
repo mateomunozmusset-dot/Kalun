@@ -226,7 +226,6 @@ export const products: Product[] = [
     images: [
       "/images/products/poncho-telar/01.jpg",
       "/images/products/poncho-telar/02.jpg",
-      "/images/products/poncho-telar/03.jpg",
     ],
     featured: true,
   },
