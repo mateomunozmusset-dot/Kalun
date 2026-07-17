@@ -171,7 +171,10 @@ export const products: Product[] = [
     materials: ["Cuero café", "Tachas plateadas", "Hebilla metálica"],
     careInstructions: ["Limpiar con paño seco.", "No doblar en el mismo punto de forma prolongada."],
     fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/cinturon-cuero/01.jpg"],
+    images: [
+      "/images/products/cinturon-cuero/01.jpg",
+      "/images/products/cinturon-cuero/02.jpg",
+    ],
   },
   {
     slug: "cinturon-hebilla-intercambiable",
@@ -185,7 +188,11 @@ export const products: Product[] = [
     materials: ["Cuero", "Hebilla intercambiable en metal", "Tachas metálicas"],
     careInstructions: ["Limpiar con paño seco.", "No doblar en el mismo punto de forma prolongada."],
     fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/cinturon-hebilla-intercambiable/01.jpg"],
+    images: [
+      "/images/products/cinturon-hebilla-intercambiable/01.jpg",
+      "/images/products/cinturon-hebilla-intercambiable/02.jpg",
+      "/images/products/cinturon-hebilla-intercambiable/03.jpg",
+    ],
   },
   {
     slug: "genesis",
