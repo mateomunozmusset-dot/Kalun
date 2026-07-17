@@ -128,7 +128,7 @@ export const products: Product[] = [
     category: "Bolsos",
     collection: "Origen",
     price: 86000,
-    shortDescription: "Bolso amplio de cuero liso con ojetillos plateados y asas de mano y bandolera.",
+    shortDescription: "Bolso amplio de cuero liso con ojetillos plateados, asas de mano y bandolera.",
     longDescription:
       "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado II toma el mismo lenguaje de ojales que Legado I, esta vez en cuero liso tono cognac. Asas de mano cortas más correa bandolera desmontable, para llevarlo al hombro o cruzado. Medidas: 40 × 30 cm, fuelle de 8-3 cm.",
     materials: [
