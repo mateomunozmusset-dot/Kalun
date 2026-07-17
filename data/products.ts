@@ -105,7 +105,7 @@ export const products: Product[] = [
     category: "Bolsos",
     collection: "Origen",
     price: 86000,
-    shortDescription: "Bolso amplio de gamuza bordó con ojales plateados y asas de cadena y cuero.",
+    shortDescription: "Bolso de gamuza borde con ojetillos nikelados y asas de cadena con cuero.",
     longDescription:
       "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado I es un bolso amplio de gamuza en tono bordó, con grandes ojales plateados a los costados y asas combinadas de cadena metálica y cuero. Un formato generoso para el día a día. Medidas: 40 × 26 cm.",
     materials: [
@@ -128,7 +128,7 @@ export const products: Product[] = [
     category: "Bolsos",
     collection: "Origen",
     price: 86000,
-    shortDescription: "Bolso amplio de cuero cognac con ojales plateados y asas de mano y bandolera.",
+    shortDescription: "Bolso amplio de cuero liso con ojetillos plateados y asas de mano y bandolera.",
     longDescription:
       "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado II toma el mismo lenguaje de ojales que Legado I, esta vez en cuero liso tono cognac. Asas de mano cortas más correa bandolera desmontable, para llevarlo al hombro o cruzado. Medidas: 40 × 30 cm, fuelle de 8-3 cm.",
     materials: [
@@ -151,7 +151,7 @@ export const products: Product[] = [
     category: "Bandoleras",
     collection: "Origen",
     price: 72000,
-    shortDescription: "Bandolera pequeña de cuero negro liso, cierre superior y cadena plateada.",
+    shortDescription: "Bandolera pequeña de cuero con textura, cierre superior con 3 compartimientos,cadena plateada y terminacion en cuero.",
     longDescription:
       "Alba es una bandolera compacta de cuero negro liso, con cierre superior y cadena plateada desmontable para llevarla cruzada. Un formato minimalista para lo esencial del día.",
     materials: ["Cuero liso negro", "Cadena plateada desmontable", "Cierre metálico"],
