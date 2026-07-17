@@ -17,7 +17,7 @@ export default function ProductosPage() {
         description="Bolsos, carteras, bandoleras y accesorios en cuero genuino, hechos a mano."
       />
       <section className="py-16 md:py-24 px-6 md:px-10">
-        <div className="max-w-[1600px] mx-auto">
+        <div className="max-w-6xl mx-auto">
           <ProductsPageClient products={products} />
         </div>
       </section>

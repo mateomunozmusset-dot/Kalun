@@ -7,12 +7,12 @@ export default function Testimonials() {
   return (
     <section className="py-16 md:py-20 px-6 md:px-10 bg-gris-calido/50">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-        <AnimatedSection className="relative aspect-[4/3] overflow-hidden order-1 md:order-none">
+        <AnimatedSection className="relative aspect-[4/5] w-full max-w-[400px] mx-auto md:mx-0 overflow-hidden order-1 md:order-none">
           <Image
             src="/images/testimonials/clienta-01.jpg"
             alt="Clienta de KALUN con su cartera y la bolsa burdeo de la marca"
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 100vw, 400px"
             className="object-cover"
           />
         </AnimatedSection>

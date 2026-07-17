@@ -17,8 +17,8 @@ export default function ArtesaniaPage() {
         description="Desde la selección del cuero hasta el control de calidad final, cada pieza pasa por manos, no por líneas de producción."
       />
 
-      <section className="px-6 md:px-10 py-20 md:py-28">
-        <div className="max-w-[1600px] mx-auto">
+      <section className="px-6 md:px-10 py-16 md:py-20">
+        <div className="max-w-6xl mx-auto">
           <AnimatedSection>
             <ProcessSteps />
           </AnimatedSection>

@@ -19,7 +19,7 @@ export default function HistoriaPage() {
       />
 
       {/* Texto de marca (del documento oficial de KALUN) */}
-      <section className="px-6 md:px-10 py-20 md:py-28">
+      <section className="px-6 md:px-10 py-16 md:py-20">
         <div className="max-w-4xl mx-auto flex flex-col gap-8">
           <AnimatedSection>
             <p className="text-2xl md:text-3xl font-display leading-snug">
@@ -48,8 +48,8 @@ export default function HistoriaPage() {
       </section>
 
       {/* Donde todo comenzó — tejido a telar y el primer logo */}
-      <section className="px-6 md:px-10 py-20 md:py-28 bg-arena/20">
-        <div className="max-w-[1600px] mx-auto">
+      <section className="px-6 md:px-10 py-16 md:py-20 bg-arena/20">
+        <div className="max-w-6xl mx-auto">
           <AnimatedSection>
             <span className="block text-xs uppercase tracking-[0.25em] text-cafe-cuero text-center">
               Los comienzos
@@ -96,14 +96,14 @@ export default function HistoriaPage() {
       </section>
 
       {/* El oficio hoy — cuero y entrega */}
-      <section className="px-6 md:px-10 py-20 md:py-28">
-        <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section className="px-6 md:px-10 py-16 md:py-20">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
           <AnimatedSection className="relative aspect-[4/5] overflow-hidden">
             <Image
               src="/images/historia/proceso-01.jpg"
               alt="Manos de artesano colocando herrajes a una cartera de cuero KALUN"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 380px"
               className="object-cover"
             />
           </AnimatedSection>
@@ -112,7 +112,7 @@ export default function HistoriaPage() {
               src="/images/historia/packaging.jpg"
               alt="Bolsa burdeo de KALUN con una pieza envuelta en su bolsa de tela"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 380px"
               className="object-cover"
             />
           </AnimatedSection>
@@ -127,7 +127,7 @@ export default function HistoriaPage() {
       </section>
 
       <section className="px-6 md:px-10 pb-24 md:pb-32 bg-arena/20 pt-20">
-        <div className="max-w-[1600px] mx-auto">
+        <div className="max-w-6xl mx-auto">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-center mb-16">Nuestro camino</h2>
           </AnimatedSection>
