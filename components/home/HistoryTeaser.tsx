@@ -12,9 +12,9 @@ export default function HistoryTeaser() {
   const y = useTransform(scrollYProgress, [0, 1], reduced ? [0, 0] : [-24, 24]);
 
   return (
-    <section ref={ref} className="py-24 md:py-32 px-6 md:px-10 bg-arena/30">
-      <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="relative aspect-[4/5] overflow-hidden">
+    <section ref={ref} className="py-16 md:py-20 px-6 md:px-10 bg-arena/30">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="relative aspect-[4/3] overflow-hidden">
           <motion.div style={{ y }} className="absolute inset-0">
             <Image
               src="/images/brand/logo-cuero.jpg"

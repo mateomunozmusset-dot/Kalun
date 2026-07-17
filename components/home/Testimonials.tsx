@@ -5,9 +5,9 @@ import AnimatedSection from "@/components/shared/AnimatedSection";
 // Cuando lleguen reseñas reales de clientas, se agregan aquí.
 export default function Testimonials() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-10 bg-gris-calido/50">
-      <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-        <AnimatedSection className="relative aspect-[4/5] overflow-hidden order-1 md:order-none">
+    <section className="py-16 md:py-20 px-6 md:px-10 bg-gris-calido/50">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <AnimatedSection className="relative aspect-[4/3] overflow-hidden order-1 md:order-none">
           <Image
             src="/images/testimonials/clienta-01.jpg"
             alt="Clienta de KALUN con su cartera y la bolsa burdeo de la marca"

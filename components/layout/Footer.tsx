@@ -8,7 +8,7 @@ import { BRAND, CONTACT, SOCIAL } from "@/lib/constants";
 export default function Footer() {
   return (
     <footer className="bg-negro text-blanco pt-20 pb-10 px-6 md:px-10">
-      <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="flex flex-col gap-4">
           <Image
             src="/images/brand/logo-arena.png"
@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-[1600px] mx-auto mt-16 pt-6 border-t border-blanco/10 text-xs text-blanco/40">
+      <div className="max-w-6xl mx-auto mt-16 pt-6 border-t border-blanco/10 text-xs text-blanco/40">
         © {new Date().getFullYear()} {BRAND.name}. Todos los derechos reservados.
       </div>
     </footer>

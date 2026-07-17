@@ -8,23 +8,23 @@ const CUSTOM_MSG = "Hola KALUN, me gustaría crear mi propio diseño. ¿Me cuent
 
 export default function CollectionsShowcase() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-10 bg-gris-calido/50">
-      <div className="max-w-[1600px] mx-auto">
+    <section className="py-16 md:py-20 px-6 md:px-10 bg-gris-calido/50">
+      <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <SectionHeading eyebrow="Colección" title="Origen, o algo completamente tuyo." />
         </AnimatedSection>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Colección Origen */}
           <Link
             href="/productos"
-            className="group relative aspect-[4/3] md:aspect-[3/4] overflow-hidden block"
+            className="group relative aspect-[4/3] md:aspect-square overflow-hidden block"
           >
             <Image
               src="/images/collections/origen.jpg"
               alt="Colección Origen"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 440px"
               className="object-cover transition-transform duration-[400ms] ease-[var(--ease-out-strong)] group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-negro/70 via-negro/10 to-transparent" />
@@ -39,13 +39,13 @@ export default function CollectionsShowcase() {
             href={buildWhatsAppLink(CUSTOM_MSG)}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative aspect-[4/3] md:aspect-[3/4] overflow-hidden block"
+            className="group relative aspect-[4/3] md:aspect-square overflow-hidden block"
           >
             <Image
               src="/images/brand/logo-cuero.jpg"
               alt="Diseño a medida en cuero KALUN"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 440px"
               className="object-cover transition-transform duration-[400ms] ease-[var(--ease-out-strong)] group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-burdeo/75 transition-colors duration-300 group-hover:bg-burdeo/65" />

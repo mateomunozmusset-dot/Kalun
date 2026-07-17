@@ -157,7 +157,7 @@ export const products: Product[] = [
     materials: ["Cuero liso negro", "Cadena plateada desmontable", "Cierre metálico"],
     careInstructions: ["Limpiar con paño seco y suave.", "Evitar humedad directa."],
     fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/alba/01.jpg", "/images/products/alba/02.jpg"],
+    images: ["/images/products/alba/01.jpg"],
   },
   {
     slug: "cinturon-cuero",

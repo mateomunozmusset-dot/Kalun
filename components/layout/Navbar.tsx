@@ -36,7 +36,7 @@ export default function Navbar() {
           scrolled ? "bg-blanco/90 backdrop-blur-md shadow-[0_1px_0_rgba(30,30,30,0.08)]" : "bg-transparent"
         }`}
       >
-        <nav className="max-w-[1600px] mx-auto flex items-center justify-between px-6 md:px-10 py-5">
+        <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-10 py-5">
           <Link href="/" aria-label="KALUN — inicio" className="flex items-center">
             <Image
               src="/images/brand/logo-burdeo.png"

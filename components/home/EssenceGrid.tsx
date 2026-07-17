@@ -18,8 +18,8 @@ export default function EssenceGrid() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="py-24 md:py-32 px-6 md:px-10">
-      <div className="max-w-[1600px] mx-auto">
+    <section className="py-16 md:py-20 px-6 md:px-10">
+      <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <SectionHeading eyebrow="Por qué KALUN" title="Nuestra esencia" />
         </AnimatedSection>
