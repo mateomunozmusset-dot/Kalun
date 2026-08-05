@@ -1,6 +1,13 @@
 export type Category = "Bolsos" | "Carteras" | "Bandoleras" | "Mochilas" | "Textil" | "Accesorios";
 export type Collection = "Origen";
 
+// Variante de color de un producto: nombre visible, color del círculo y sus fotos.
+export interface ColorVariant {
+  name: string;
+  hex: string; // color del círculo selector
+  images: string[];
+}
+
 export interface Product {
   slug: string;
   name: string;
@@ -12,11 +19,41 @@ export interface Product {
   materials: string[];
   careInstructions: string[];
   fabricationTime: string;
-  images: string[]; // rutas bajo /images/products/{slug}/
+  images: string[]; // rutas bajo /images/products/{slug}/ — fotos por defecto (y para las tarjetas)
+  colors?: ColorVariant[]; // opcional: si existe, el cliente elige color y cambian las fotos
   featured?: boolean;
 }
 
 export const products: Product[] = [
+  {
+    slug: "totem-alma",
+    name: "Tótem ALMA",
+    category: "Carteras",
+    collection: "Origen",
+    price: 83000,
+    shortDescription: "Bolso hobo de gamuza cognac, amplio y suave, con clutch desmontable en su interior.",
+    longDescription:
+      "Tótem ALMA lleva su nombre por lo que representa: el alma es la esencia, lo que nos hace únicos y permanece con el tiempo — igual que una pieza hecha a mano para durar. Es un bolso hobo de gamuza en tono cognac, de líneas suaves y caída natural, pensado para llevar todo lo esencial con estilo. Su asa de hombro en cuero y el sello KALUN grabado le dan identidad, y en su interior incluye un clutch desmontable para llevar aparte lo más importante. Amplio y versátil, acompaña del día a la noche. Medidas: 38 × 38 cm.",
+    materials: [
+      "Gamuza tono cognac",
+      "Asa de hombro en cuero",
+      "Clutch interior desmontable",
+      "Herrajes en metal plateado",
+    ],
+    careInstructions: [
+      "Cepillar la gamuza en seco con cepillo suave.",
+      "Evitar humedad directa.",
+      "Guardar en su bolsa de tela cuando no se use.",
+    ],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: [
+      "/images/products/totem-alma/01.jpg",
+      "/images/products/totem-alma/02.jpg",
+      "/images/products/totem-alma/03.jpg",
+      "/images/products/totem-alma/04.jpg",
+    ],
+    featured: true,
+  },
   {
     slug: "escencia",
     name: "Escencia",
@@ -96,53 +133,62 @@ export const products: Product[] = [
       "Evitar humedad directa.",
     ],
     fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/raiz/01.jpg", "/images/products/raiz/02.jpg"],
+    images: ["/images/products/raiz/01.jpg", "/images/products/raiz/02.jpg", "/images/products/raiz/03.jpg"],
+    colors: [
+      {
+        name: "Café",
+        hex: "#8B5E3C",
+        images: [
+          "/images/products/raiz/01.jpg",
+          "/images/products/raiz/02.jpg",
+          "/images/products/raiz/03.jpg",
+        ],
+      },
+      {
+        name: "Oliva",
+        hex: "#6E6A3B",
+        images: ["/images/products/raiz/oliva-01.jpg"],
+      },
+    ],
     featured: true,
   },
   {
-    slug: "legado-i",
-    name: "Legado I",
+    slug: "legado",
+    name: "Legado",
     category: "Bolsos",
     collection: "Origen",
     price: 86000,
-    shortDescription: "Bolso de gamuza borde con ojetillos nikelados y asas de cadena con cuero.",
+    shortDescription: "Bolso amplio con grandes ojales plateados. Disponible en gamuza bordó y en cuero cognac.",
     longDescription:
-      "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado I es un bolso amplio de gamuza en tono bordó, con grandes ojales plateados a los costados y asas combinadas de cadena metálica y cuero. Un formato generoso para el día a día. Medidas: 40 × 26 cm.",
+      "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado es un bolso amplio de formato generoso, con grandes ojales plateados a los costados, en dos versiones a elección: gamuza en tono bordó, o cuero liso tono cognac con correa bandolera desmontable. Un formato generoso para el día a día. Medidas: 40 × 26 / 30 cm.",
     materials: [
-      "Gamuza tono bordó",
+      "Gamuza bordó o cuero liso cognac",
       "Ojales en metal plateado",
-      "Asas de cadena metálica y cuero",
+      "Asas de cadena y cuero / correa bandolera desmontable",
     ],
     careInstructions: [
-      "Cepillar la gamuza en seco con cepillo suave.",
+      "Cepillar la gamuza en seco o limpiar el cuero con paño suave.",
       "Evitar humedad directa.",
       "Guardar en su bolsa de tela cuando no se use.",
     ],
     fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/legado-i/01.jpg"],
-    featured: true,
-  },
-  {
-    slug: "legado-ii",
-    name: "Legado II",
-    category: "Bolsos",
-    collection: "Origen",
-    price: 86000,
-    shortDescription: "Bolso amplio de cuero liso con ojetillos plateados, asas de mano y bandolera.",
-    longDescription:
-      "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado II toma el mismo lenguaje de ojales que Legado I, esta vez en cuero liso tono cognac. Asas de mano cortas más correa bandolera desmontable, para llevarlo al hombro o cruzado. Medidas: 40 × 30 cm, fuelle de 8-3 cm.",
-    materials: [
-      "Cuero liso tono cognac",
-      "Ojales en metal plateado",
-      "Asas de mano y correa bandolera desmontable",
+    images: ["/images/products/legado-ii/01.jpg", "/images/products/legado-ii/02.jpg", "/images/products/legado-ii/03.jpg"],
+    colors: [
+      {
+        name: "Cognac",
+        hex: "#8B5E3C",
+        images: [
+          "/images/products/legado-ii/01.jpg",
+          "/images/products/legado-ii/02.jpg",
+          "/images/products/legado-ii/03.jpg",
+        ],
+      },
+      {
+        name: "Bordó",
+        hex: "#61222B",
+        images: ["/images/products/legado-i/01.jpg"],
+      },
     ],
-    careInstructions: [
-      "Limpiar con paño seco y suave.",
-      "Aplicar cera nutriente cada 3-4 meses.",
-      "Evitar exposición prolongada al sol.",
-    ],
-    fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/legado-ii/01.jpg", "/images/products/legado-ii/02.jpg"],
     featured: true,
   },
   {
@@ -157,7 +203,7 @@ export const products: Product[] = [
     materials: ["Cuero liso negro", "Cadena plateada desmontable", "Cierre metálico"],
     careInstructions: ["Limpiar con paño seco y suave.", "Evitar humedad directa."],
     fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/alba/01.jpg"],
+    images: ["/images/products/alba/01.jpg", "/images/products/alba/02.jpg"],
   },
   {
     slug: "cinturon-cuero",

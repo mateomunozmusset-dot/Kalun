@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProductBySlug, getRelatedProducts, products } from "@/data/products";
-import ProductGallery from "@/components/product/ProductGallery";
-import ProductInfo from "@/components/product/ProductInfo";
+import ProductDetail from "@/components/product/ProductDetail";
 import RelatedProducts from "@/components/product/RelatedProducts";
 
 export function generateStaticParams() {
@@ -34,12 +33,7 @@ export default async function ProductoPage({ params }: { params: Promise<{ slug:
 
   return (
     <>
-      <div className="pt-32 pb-16 md:pt-40 md:pb-24 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
-          <ProductGallery images={product.images} name={product.name} />
-          <ProductInfo product={product} />
-        </div>
-      </div>
+      <ProductDetail product={product} />
       <RelatedProducts products={related} />
     </>
   );

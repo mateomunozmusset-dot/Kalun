@@ -1,7 +1,14 @@
+import type { ReactNode } from "react";
 import type { Product } from "@/data/products";
 import WhatsAppButton from "@/components/shared/WhatsAppButton";
 
-export default function ProductInfo({ product }: { product: Product }) {
+export default function ProductInfo({
+  product,
+  colorSelector,
+}: {
+  product: Product;
+  colorSelector?: ReactNode;
+}) {
   return (
     <div className="flex flex-col gap-8">
       <div>
@@ -11,6 +18,8 @@ export default function ProductInfo({ product }: { product: Product }) {
         <h1 className="text-3xl md:text-4xl mt-2">{product.name}</h1>
         <p className="text-xl text-negro/70 mt-3">${product.price.toLocaleString("es-CL")} CLP</p>
       </div>
+
+      {colorSelector}
 
       <p className="text-negro/70 leading-relaxed">{product.longDescription}</p>
 
