@@ -55,8 +55,8 @@ export const products: Product[] = [
     featured: true,
   },
   {
-    slug: "escencia",
-    name: "Escencia",
+    slug: "esencia",
+    name: "Esencia",
     category: "Carteras",
     collection: "Origen",
     price: 78000,
