@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { playfair, inter } from "@/lib/fonts";
 import { BRAND } from "@/lib/constants";
 import Navbar from "@/components/layout/Navbar";
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
