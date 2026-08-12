@@ -1,6 +1,7 @@
 "use client";
 
 import { buildProductInquiryMessage, buildWhatsAppLink } from "@/lib/whatsapp";
+import { trackWhatsAppContact } from "@/lib/analytics";
 
 interface WhatsAppButtonProps {
   productName: string;
@@ -12,6 +13,7 @@ interface WhatsAppButtonProps {
 // es la acción de conversión principal, debe sentirse estable y confiable.
 export default function WhatsAppButton({ productName, slug, className = "" }: WhatsAppButtonProps) {
   const handleClick = () => {
+    trackWhatsAppContact(productName);
     const origin = typeof window !== "undefined" ? window.location.origin : "";
     const link = buildWhatsAppLink(buildProductInquiryMessage(productName, slug, origin));
     window.open(link, "_blank", "noopener,noreferrer");

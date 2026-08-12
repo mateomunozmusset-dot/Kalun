@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SectionHeading from "@/components/shared/SectionHeading";
 import AnimatedSection from "@/components/shared/AnimatedSection";
+import WhatsAppLink from "@/components/shared/WhatsAppLink";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 
 const CUSTOM_MSG = "Hola KALUN, me gustaría crear mi propio diseño. ¿Me cuentan cómo funciona?";
@@ -35,10 +36,9 @@ export default function CollectionsShowcase() {
           </Link>
 
           {/* Crea tu propio diseño */}
-          <a
+          <WhatsAppLink
             href={buildWhatsAppLink(CUSTOM_MSG)}
-            target="_blank"
-            rel="noopener noreferrer"
+            source="Crea tu propio diseño"
             className="group relative aspect-[4/3] md:aspect-square overflow-hidden block"
           >
             <Image
@@ -58,7 +58,7 @@ export default function CollectionsShowcase() {
                 Escríbenos →
               </span>
             </div>
-          </a>
+          </WhatsAppLink>
         </div>
       </div>
     </section>
