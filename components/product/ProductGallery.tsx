@@ -2,20 +2,38 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { RotateCw, ZoomIn } from "lucide-react";
+import { RotateCw, ZoomIn, Play } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function ProductGallery({ images, name }: { images: string[]; name: string }) {
+type Media = { type: "image"; src: string } | { type: "video"; src: string };
+
+export default function ProductGallery({
+  images,
+  name,
+  video,
+}: {
+  images: string[];
+  name: string;
+  video?: string;
+}) {
+  const media: Media[] = [
+    ...(video ? [{ type: "video" as const, src: video }] : []),
+    ...images.map((src) => ({ type: "image" as const, src })),
+  ];
+
   const [active, setActive] = useState(0);
   const [zoomed, setZoomed] = useState(false);
 
-  const cycle = () => setActive((i) => (i + 1) % images.length);
+  const current = media[active] ?? media[0];
+  const cycle = () => setActive((i) => (i + 1) % media.length);
 
   return (
     <div className="flex flex-col gap-4">
       <div
-        className="relative aspect-square overflow-hidden bg-gris-calido/40 cursor-zoom-in"
-        onClick={() => setZoomed((z) => !z)}
+        className={`relative aspect-square overflow-hidden bg-gris-calido/40 ${
+          current.type === "image" ? "cursor-zoom-in" : ""
+        }`}
+        onClick={() => current.type === "image" && setZoomed((z) => !z)}
       >
         <AnimatePresence mode="wait">
           <motion.div
@@ -26,58 +44,84 @@ export default function ProductGallery({ images, name }: { images: string[]; nam
             transition={{ duration: 0.35 }}
             className="absolute inset-0"
           >
-            <Image
-              src={images[active]}
-              alt={`${name} — ángulo ${active + 1}`}
-              fill
-              priority={active === 0}
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className={`object-cover transition-transform duration-500 ${zoomed ? "scale-150" : "scale-100"}`}
-            />
+            {current.type === "video" ? (
+              <video
+                src={current.src}
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <Image
+                src={current.src}
+                alt={`${name} — vista ${active + 1}`}
+                fill
+                priority={active === 0}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className={`object-cover transition-transform duration-500 ${zoomed ? "scale-150" : "scale-100"}`}
+              />
+            )}
           </motion.div>
         </AnimatePresence>
 
-        <div className="absolute bottom-4 right-4 flex gap-2">
-          {images.length > 1 && (
+        {current.type === "image" && (
+          <div className="absolute bottom-4 right-4 flex gap-2">
+            {media.length > 1 && (
+              <button
+                type="button"
+                aria-label="Ver otra vista"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  cycle();
+                }}
+                className="w-10 h-10 rounded-full bg-blanco/90 flex items-center justify-center"
+              >
+                <RotateCw size={16} />
+              </button>
+            )}
             <button
               type="button"
-              aria-label="Ver otro ángulo (vista 360° simulada)"
+              aria-label={zoomed ? "Alejar" : "Acercar"}
               onClick={(e) => {
                 e.stopPropagation();
-                cycle();
+                setZoomed((z) => !z);
               }}
               className="w-10 h-10 rounded-full bg-blanco/90 flex items-center justify-center"
             >
-              <RotateCw size={16} />
+              <ZoomIn size={16} />
             </button>
-          )}
-          <button
-            type="button"
-            aria-label={zoomed ? "Alejar" : "Acercar"}
-            onClick={(e) => {
-              e.stopPropagation();
-              setZoomed((z) => !z);
-            }}
-            className="w-10 h-10 rounded-full bg-blanco/90 flex items-center justify-center"
-          >
-            <ZoomIn size={16} />
-          </button>
-        </div>
+          </div>
+        )}
       </div>
 
-      {images.length > 1 && (
+      {media.length > 1 && (
         <div className="flex gap-3">
-          {images.map((img, i) => (
+          {media.map((m, i) => (
             <button
-              key={img}
+              key={m.src}
               type="button"
-              aria-label={`Ver ${name} ángulo ${i + 1}`}
-              onClick={() => setActive(i)}
+              aria-label={
+                m.type === "video" ? `Ver video de ${name}` : `Ver ${name} vista ${i + 1}`
+              }
+              onClick={() => {
+                setActive(i);
+                setZoomed(false);
+              }}
               className={`relative w-20 h-20 overflow-hidden border ${
                 active === i ? "border-cafe-cuero" : "border-negro/10"
               }`}
             >
-              <Image src={img} alt="" fill sizes="80px" className="object-cover" />
+              {m.type === "video" ? (
+                <>
+                  <video src={m.src} muted playsInline preload="metadata" className="w-full h-full object-cover" />
+                  <span className="absolute inset-0 flex items-center justify-center bg-negro/25">
+                    <Play size={18} className="text-blanco" fill="currentColor" />
+                  </span>
+                </>
+              ) : (
+                <Image src={m.src} alt="" fill sizes="80px" className="object-cover" />
+              )}
             </button>
           ))}
         </div>

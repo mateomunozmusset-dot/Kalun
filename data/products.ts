@@ -21,6 +21,7 @@ export interface Product {
   fabricationTime: string;
   images: string[]; // rutas bajo /images/products/{slug}/ — fotos por defecto (y para las tarjetas)
   colors?: ColorVariant[]; // opcional: si existe, el cliente elige color y cambian las fotos
+  video?: string; // opcional: ruta a un video (mp4) que se muestra primero en la galería
   featured?: boolean;
 }
 
@@ -76,9 +77,32 @@ export const products: Product[] = [
     ],
     fabricationTime: "10 a 15 dias Habiles",
     images: [
+      "/images/products/totem-legado/negro-01.jpg",
       "/images/products/totem-legado/01.jpg",
       "/images/products/totem-legado/02.jpg",
+      "/images/products/totem-legado/negro-02.jpg",
     ],
+    colors: [
+      {
+        name: "Negro",
+        hex: "#1c1c1c",
+        images: [
+          "/images/products/totem-legado/negro-01.jpg",
+          "/images/products/totem-legado/01.jpg",
+          "/images/products/totem-legado/02.jpg",
+          "/images/products/totem-legado/negro-02.jpg",
+        ],
+      },
+      {
+        name: "Café",
+        hex: "#8B5E3C",
+        images: [
+          "/images/products/totem-legado/cafe-01.jpg",
+          "/images/products/totem-legado/cafe-02.jpg",
+        ],
+      },
+    ],
+    video: "/videos/totem-legado.mp4",
     featured: true,
   },
   {
@@ -175,45 +199,6 @@ export const products: Product[] = [
         name: "Oliva",
         hex: "#6E6A3B",
         images: ["/images/products/raiz/oliva-01.jpg"],
-      },
-    ],
-    featured: true,
-  },
-  {
-    slug: "legado",
-    name: "Legado",
-    category: "Bolsos",
-    collection: "Origen",
-    price: 86000,
-    shortDescription: "Bolso amplio con grandes ojales plateados. Disponible en gamuza bordó y en cuero cognac.",
-    longDescription:
-      "Inspirado en aquello que permanece: clásico, atemporal y hecho para durar muchos años. Legado es un bolso amplio de formato generoso, con grandes ojales plateados a los costados, en dos versiones a elección: gamuza en tono bordó, o cuero liso tono cognac con correa bandolera desmontable. Un formato generoso para el día a día. Medidas: 40 × 26 / 30 cm.",
-    materials: [
-      "Gamuza bordó o cuero liso cognac",
-      "Ojales en metal plateado",
-      "Asas de cadena y cuero / correa bandolera desmontable",
-    ],
-    careInstructions: [
-      "Cepillar la gamuza en seco o limpiar el cuero con paño suave.",
-      "Evitar humedad directa.",
-      "Guardar en su bolsa de tela cuando no se use.",
-    ],
-    fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/legado-ii/01.jpg", "/images/products/legado-ii/02.jpg", "/images/products/legado-ii/03.jpg"],
-    colors: [
-      {
-        name: "Cognac",
-        hex: "#8B5E3C",
-        images: [
-          "/images/products/legado-ii/01.jpg",
-          "/images/products/legado-ii/02.jpg",
-          "/images/products/legado-ii/03.jpg",
-        ],
-      },
-      {
-        name: "Bordó",
-        hex: "#61222B",
-        images: ["/images/products/legado-i/01.jpg"],
       },
     ],
     featured: true,
@@ -325,6 +310,101 @@ export const products: Product[] = [
       "/images/products/poncho-telar/02.jpg",
     ],
     featured: true,
+  },
+  {
+    slug: "bolso-jeans-cuero",
+    name: "Bolso de Jeans y Cuero",
+    category: "Bolsos",
+    collection: "Origen",
+    price: 89000,
+    shortDescription: "Bolso de viaje en jeans y cuero, amplio y resistente, con correa desmontable.",
+    longDescription:
+      "Un bolso de fin de semana con carácter: cuerpo de jeans (mezclilla) combinado con asas y detalles de cuero café. Amplio y resistente, ideal para escapadas y viajes cortos. Incluye correa desmontable para llevarlo al hombro. Medidas: alto 29 cm, ancho 45 cm, fuelle 17 cm, base 14 cm.",
+    materials: ["Jeans (mezclilla)", "Asas y detalles de cuero café", "Herrajes metálicos", "Correa desmontable"],
+    careInstructions: ["Limpiar con paño seco.", "Evitar humedad directa.", "Nutrir el cuero con cera cada 3-4 meses."],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: ["/images/products/bolso-jeans-cuero/01.jpg"],
+    featured: true,
+  },
+  {
+    slug: "bandolera-herencia",
+    name: "Bandolera Herencia",
+    category: "Bandoleras",
+    collection: "Origen",
+    price: 82000,
+    shortDescription: "Bandolera de cuero con cadena, compacta y elegante. Disponible en varios colores.",
+    longDescription:
+      "Herencia es una bandolera de cuero de líneas limpias, con cierre superior y cadena metálica para llevarla al hombro o cruzada. Compacta pero con espacio para lo esencial, es una pieza versátil que acompaña de día y de noche. Disponible en negro, café, burdeo y verde olivo. Medidas: alto 19 cm, ancho 34 cm, base 8 cm.",
+    materials: ["Cuero", "Cadena metálica", "Sello KALUN grabado"],
+    careInstructions: ["Limpiar con paño seco y suave.", "Evitar humedad directa."],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: [
+      "/images/products/bandolera-herencia/01.jpg",
+      "/images/products/bandolera-herencia/02.jpg",
+    ],
+    featured: true,
+  },
+  {
+    slug: "llavero",
+    name: "Llavero",
+    category: "Accesorios",
+    collection: "Origen",
+    price: 7990,
+    shortDescription: "Llavero de cuero y gamuza con mosquetón metálico. Disponible en varios colores.",
+    longDescription:
+      "Un pequeño detalle bien hecho: llavero de gamuza y cuero con mosquetón metálico y terminación en print animal. Disponible en café, negro y burdeo. El regalo perfecto o el complemento para tus llaves.",
+    materials: ["Gamuza y cuero", "Mosquetón metálico"],
+    careInstructions: ["Limpiar con paño seco."],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: ["/images/products/llavero/01.jpg"],
+  },
+  {
+    slug: "libreta",
+    name: "Libreta de Cuero",
+    category: "Accesorios",
+    collection: "Origen",
+    price: 28000,
+    shortDescription: "Funda de libreta en cuero genuino, con cierre de botón. Recargable.",
+    longDescription:
+      "Una libreta forrada en cuero genuino, hecha para acompañarte por años y envejecer con elegancia. Cierre de botón y diseño sobrio con costura en contraste. Ideal para notas, bocetos o como regalo.",
+    materials: ["Cuero genuino", "Cierre de botón metálico"],
+    careInstructions: ["Limpiar con paño seco.", "Evitar humedad directa."],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: ["/images/products/libreta/01.jpg"],
+    video: "/videos/libreta.mp4",
+  },
+  {
+    slug: "mochila-tierra",
+    name: "Mochila Tierra",
+    category: "Mochilas",
+    collection: "Origen",
+    price: 85000,
+    shortDescription: "Mochila saco de gamuza azul con base de cuero, cierre de argollas y tirantes de cuero.",
+    longDescription:
+      "Tierra es una mochila saco de gamuza en tono azul, con base y tirantes de cuero café que le dan contraste y resistencia. Su cierre de argollas y su forma orgánica la hacen cómoda y con mucha personalidad, ideal para el día a día. Hecha a mano, para acompañarte y envejecer con carácter.",
+    materials: ["Gamuza azul", "Base y tirantes de cuero café", "Argollas metálicas", "Sello KALUN grabado"],
+    careInstructions: [
+      "Cepillar la gamuza en seco con cepillo suave.",
+      "Nutrir el cuero con cera cada 3-4 meses.",
+      "Evitar humedad directa.",
+    ],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: ["/images/products/mochila-tierra/01.jpg"],
+    featured: true,
+  },
+  {
+    slug: "billetera",
+    name: "Billetera de Cuero",
+    category: "Accesorios",
+    collection: "Origen",
+    price: 28000,
+    shortDescription: "Billetera de cuero café con aplique de abeja y cierre. Compacta y elegante.",
+    longDescription:
+      "Una billetera de cuero café hecha a mano, compacta y funcional, con un aplique de abeja en metal que le da identidad. Espacio para tarjetas, billetes y monedas con cierre. Una pieza pequeña que se disfruta todos los días.",
+    materials: ["Cuero café", "Aplique de abeja en metal", "Cierre metálico"],
+    careInstructions: ["Limpiar con paño seco.", "Evitar humedad directa."],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: ["/images/products/billetera/01.jpg"],
   },
 ];
 

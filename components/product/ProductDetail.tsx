@@ -41,7 +41,7 @@ export default function ProductDetail({ product }: { product: Product }) {
   return (
     <div className="pt-32 pb-16 md:pt-40 md:pb-24 px-6 md:px-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
-        <ProductGallery key={active} images={images} name={product.name} />
+        <ProductGallery key={active} images={images} name={product.name} video={product.video} />
         <ProductInfo product={product} colorSelector={colorSelector} />
       </div>
     </div>
