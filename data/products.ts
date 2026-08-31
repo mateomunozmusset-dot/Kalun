@@ -31,9 +31,9 @@ export const products: Product[] = [
     category: "Carteras",
     collection: "Origen",
     price: 83000,
-    shortDescription: "Bolso hobo de gamuza cognac, amplio y suave, con clutch desmontable en su interior.",
+    shortDescription: "Bolso de gamuza cognac, amplio y suave, con clutch desmontable en su interior.",
     longDescription:
-      "Tótem ALMA lleva su nombre por lo que representa: el alma es la esencia, lo que nos hace únicos y permanece con el tiempo — igual que una pieza hecha a mano para durar. Es un bolso hobo de gamuza en tono cognac, de líneas suaves y caída natural, pensado para llevar todo lo esencial con estilo. Su asa de hombro en cuero y el sello KALUN grabado le dan identidad, y en su interior incluye un clutch desmontable para llevar aparte lo más importante. Amplio y versátil, acompaña del día a la noche. Medidas: 38 × 38 cm.",
+      "Tótem ALMA lleva su nombre por lo que representa: el alma es la esencia, lo que nos hace únicos y permanece con el tiempo — igual que una pieza hecha a mano para durar. Es un bolso de gamuza en tono cognac, de líneas suaves y caída natural, pensado para llevar todo lo esencial con estilo. Su asa de hombro en cuero y el sello KALUN grabado le dan identidad, y en su interior incluye un clutch desmontable para llevar aparte lo más importante. Amplio y versátil, acompaña del día a la noche. Medidas: 38 × 38 cm.",
     materials: [
       "Gamuza tono cognac",
       "Asa de hombro en cuero",
@@ -51,6 +51,33 @@ export const products: Product[] = [
       "/images/products/totem-alma/02.jpg",
       "/images/products/totem-alma/03.jpg",
       "/images/products/totem-alma/04.jpg",
+    ],
+    featured: true,
+  },
+  {
+    slug: "totem-legado",
+    name: "Tótem Legado",
+    category: "Bolsos",
+    collection: "Origen",
+    price: 102000,
+    shortDescription: "Tote amplio de cuero negro con hileras de ojales plateados a los costados.",
+    longDescription:
+      "Tótem Legado es un tote de cuero negro amplio y estructurado, con dos hileras de grandes ojales plateados a los costados y costura en contraste que resaltan su carácter artesanal. Sus asas al hombro y su formato generoso lo hacen ideal para el día a día. Medidas: 38 cm de ancho × 35 cm de alto × 15 cm de fuelle.",
+    materials: [
+      "Cuero negro",
+      "Ojales en metal plateado",
+      "Asas al hombro",
+      "Sello KALUN grabado",
+    ],
+    careInstructions: [
+      "Limpiar con paño seco y suave.",
+      "Aplicar cera nutriente cada 3-4 meses.",
+      "Evitar exposición prolongada al sol.",
+    ],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: [
+      "/images/products/totem-legado/01.jpg",
+      "/images/products/totem-legado/02.jpg",
     ],
     featured: true,
   },
@@ -238,6 +265,23 @@ export const products: Product[] = [
       "/images/products/cinturon-hebilla-intercambiable/01.jpg",
       "/images/products/cinturon-hebilla-intercambiable/02.jpg",
       "/images/products/cinturon-hebilla-intercambiable/03.jpg",
+    ],
+  },
+  {
+    slug: "cinturon-tacha-fleco",
+    name: "Cinturón Tacha Fleco",
+    category: "Accesorios",
+    collection: "Origen",
+    price: 42000,
+    shortDescription: "Cinturón ancho de cuero negro con tachas, argolla central y flecos.",
+    longDescription:
+      "Un cinturón de carácter, hecho a mano en cuero negro: ancho, con tachas plateadas, argolla central y flecos que le dan movimiento y actitud. Se amarra a la cintura para marcar la silueta y darle personalidad a cualquier look, de día o de noche.",
+    materials: ["Cuero negro", "Tachas y argolla en metal plateado", "Flecos de cuero"],
+    careInstructions: ["Limpiar con paño seco.", "No doblar en el mismo punto de forma prolongada."],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: [
+      "/images/products/cinturon-tacha-fleco/01.jpg",
+      "/images/products/cinturon-tacha-fleco/02.jpg",
     ],
   },
   {
