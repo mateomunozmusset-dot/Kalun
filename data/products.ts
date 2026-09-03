@@ -48,8 +48,8 @@ export const products: Product[] = [
     ],
     fabricationTime: "10 a 15 dias Habiles",
     images: [
-      "/images/products/totem-alma/01.jpg",
       "/images/products/totem-alma/02.jpg",
+      "/images/products/totem-alma/01.jpg",
       "/images/products/totem-alma/03.jpg",
       "/images/products/totem-alma/04.jpg",
     ],
@@ -61,12 +61,12 @@ export const products: Product[] = [
     category: "Bolsos",
     collection: "Origen",
     price: 102000,
-    shortDescription: "Tote amplio de cuero negro con hileras de ojales plateados a los costados.",
+    shortDescription: "Tote amplio de cuero negro con hileras de ojetillos envejecidos a los costados.",
     longDescription:
-      "Tótem Legado es un tote de cuero negro amplio y estructurado, con dos hileras de grandes ojales plateados a los costados y costura en contraste que resaltan su carácter artesanal. Sus asas al hombro y su formato generoso lo hacen ideal para el día a día. Medidas: 38 cm de ancho × 35 cm de alto × 15 cm de fuelle.",
+      "Tótem Legado es un tote de cuero negro amplio y estructurado, con dos hileras de grandes ojetillos envejecidos a los costados y costura en contraste que resaltan su carácter artesanal. Sus asas al hombro y su formato generoso lo hacen ideal para el día a día. Medidas: 38 cm de ancho × 35 cm de alto × 15 cm de fuelle.",
     materials: [
       "Cuero negro",
-      "Ojales en metal plateado",
+      "Ojetillos envejecidos",
       "Asas al hombro",
       "Sello KALUN grabado",
     ],
@@ -110,7 +110,7 @@ export const products: Product[] = [
     name: "Esencia",
     category: "Carteras",
     collection: "Origen",
-    price: 78000,
+    price: 85000,
     shortDescription: "La pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día.",
     longDescription:
       "Escencia es la pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día. Cartera de gamuza con asas y ribetes de cuero negro; el herraje de cabeza de toro en metal plateado le agrega identidad y personalidad. Incluye borlas de cuero y correa bandolera ajustable y desmontable, para usarla de mano o cruzada. Medidas: 25 × 21 cm, fuelle de 11 cm. Disponible en tono ladrillo y en gris.",
@@ -127,9 +127,9 @@ export const products: Product[] = [
     ],
     fabricationTime: "10 a 15 dias Habiles",
     images: [
+      "/images/products/escencia/03.jpg",
       "/images/products/escencia/01.jpg",
       "/images/products/escencia/02.jpg",
-      "/images/products/escencia/03.jpg",
       "/images/products/escencia/04.jpg",
       "/images/products/escencia/05.jpg",
       "/images/products/escencia/06.jpg",
