@@ -8,7 +8,12 @@ import ProductInfo from "@/components/product/ProductInfo";
 export default function ProductDetail({ product }: { product: Product }) {
   const colors = product.colors ?? [];
   const hasColors = colors.length > 1;
-  const [active, setActive] = useState(0);
+  // Arranca en el color cuya galería contiene la foto de portada del producto.
+  const initial = Math.max(
+    0,
+    colors.findIndex((c) => c.images.includes(product.images[0]))
+  );
+  const [active, setActive] = useState(initial);
 
   const images = hasColors ? colors[active].images : product.images;
 

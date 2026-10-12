@@ -16,9 +16,10 @@ export default function ProductGallery({
   name: string;
   video?: string;
 }) {
+  // El video va al final: así la primera foto elegida sigue siendo la portada.
   const media: Media[] = [
-    ...(video ? [{ type: "video" as const, src: video }] : []),
     ...images.map((src) => ({ type: "image" as const, src })),
+    ...(video ? [{ type: "video" as const, src: video }] : []),
   ];
 
   const [active, setActive] = useState(0);
@@ -114,7 +115,8 @@ export default function ProductGallery({
             >
               {m.type === "video" ? (
                 <>
-                  <video src={m.src} muted playsInline preload="metadata" className="w-full h-full object-cover" />
+                  {/* #t=0.1 hace que iOS muestre el primer fotograma como miniatura */}
+                  <video src={`${m.src}#t=0.1`} muted playsInline preload="metadata" className="w-full h-full object-cover" />
                   <span className="absolute inset-0 flex items-center justify-center bg-negro/25">
                     <Play size={18} className="text-blanco" fill="currentColor" />
                   </span>

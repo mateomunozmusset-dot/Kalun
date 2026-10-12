@@ -51,8 +51,8 @@ export const products: Product[] = [
       "/images/products/totem-alma/02.jpg",
       "/images/products/totem-alma/01.jpg",
       "/images/products/totem-alma/03.jpg",
-      "/images/products/totem-alma/04.jpg",
     ],
+    video: "/videos/totem-alma.mp4",
     featured: true,
   },
   {
@@ -127,39 +127,12 @@ export const products: Product[] = [
     ],
     fabricationTime: "10 a 15 dias Habiles",
     images: [
-      "/images/products/escencia/03.jpg",
-      "/images/products/escencia/01.jpg",
-      "/images/products/escencia/02.jpg",
+      "/images/products/escencia/07.jpg",
+      "/images/products/escencia/08.jpg",
+      "/images/products/escencia/09.jpg",
       "/images/products/escencia/04.jpg",
       "/images/products/escencia/05.jpg",
       "/images/products/escencia/06.jpg",
-    ],
-    featured: true,
-  },
-  {
-    // Producto nuevo — PRECIO PROVISIONAL, confirmar con el cliente.
-    slug: "travesia",
-    name: "Travesía",
-    category: "Carteras",
-    collection: "Origen",
-    price: 89000,
-    shortDescription: "Para quienes disfrutan descubrir nuevos caminos. Cómoda, versátil y muy amplia.",
-    longDescription:
-      "Travesía es para quienes disfrutan descubrir nuevos caminos. Cómoda, versátil y diseñada para acompañar cada viaje: muy amplia, te permite llevar todo lo que necesitas. Tote de gamuza y cuero en negro, de líneas limpias, con asas largas para llevarla al hombro.",
-    materials: [
-      "Gamuza y cuero negro",
-      "Asas largas al hombro",
-      "Herrajes en metal plateado",
-    ],
-    careInstructions: [
-      "Cepillar la gamuza en seco con cepillo suave.",
-      "Evitar humedad directa.",
-      "Guardar en su bolsa de tela cuando no se use.",
-    ],
-    fabricationTime: "10 a 15 dias Habiles",
-    images: [
-      "/images/products/travesia/01.jpg",
-      "/images/products/travesia/02.jpg",
     ],
     featured: true,
   },
@@ -171,7 +144,7 @@ export const products: Product[] = [
     price: 76000,
     shortDescription: "Conecta con la tierra, los oficios y el origen de los materiales. Noble, cálida y auténtica.",
     longDescription:
-      "Raíz conecta con la tierra, los oficios y el origen de los materiales: noble, cálida y auténtica. Cartera de gamuza con flecos laterales cortados a mano y solapa con tachas plateadas; el sello de la estrella con alas es su detalle más juvenil y le da una onda mística única. Cadena plateada con tramo de cuero para llevarla al hombro. Disponible en café y en negro.",
+      "Raíz conecta con la tierra, los oficios y el origen de los materiales: noble, cálida y auténtica. Cartera de gamuza con flecos laterales cortados a mano y solapa con tachas plateadas; el sello de la estrella con alas es su detalle más juvenil y le da una onda mística única. Cadena plateada con tramo de cuero para llevarla al hombro. Disponible en negro, camel y rojo.",
     materials: [
       "Gamuza",
       "Flecos de cuero cortados a mano",
@@ -184,23 +157,25 @@ export const products: Product[] = [
       "Evitar humedad directa.",
     ],
     fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/raiz/01.jpg", "/images/products/raiz/02.jpg", "/images/products/raiz/03.jpg"],
+    images: ["/images/products/raiz/rojo-01.jpg", "/images/products/raiz/rojo-02.jpg"],
     colors: [
       {
-        name: "Café",
-        hex: "#8B5E3C",
-        images: [
-          "/images/products/raiz/01.jpg",
-          "/images/products/raiz/02.jpg",
-          "/images/products/raiz/03.jpg",
-        ],
+        name: "Negro",
+        hex: "#1c1c1c",
+        images: ["/images/products/raiz/02.jpg"],
       },
       {
-        name: "Oliva",
-        hex: "#6E6A3B",
-        images: ["/images/products/raiz/oliva-01.jpg"],
+        name: "Camel",
+        hex: "#B07A45",
+        images: ["/images/products/raiz/01.jpg", "/images/products/raiz/03.jpg"],
+      },
+      {
+        name: "Rojo",
+        hex: "#A3192B",
+        images: ["/images/products/raiz/rojo-01.jpg", "/images/products/raiz/rojo-02.jpg"],
       },
     ],
+    video: "/videos/raiz.mp4",
     featured: true,
   },
   {
@@ -211,28 +186,17 @@ export const products: Product[] = [
     price: 72000,
     shortDescription: "Bandolera pequeña de cuero con textura, cierre superior con 3 compartimientos,cadena plateada y terminacion en cuero.",
     longDescription:
-      "Alba es una bandolera compacta de cuero negro liso, con cierre superior y cadena plateada desmontable para llevarla cruzada. Un formato minimalista para lo esencial del día.",
-    materials: ["Cuero liso negro", "Cadena plateada desmontable", "Cierre metálico"],
+      "Alba es una bandolera compacta de cuero con textura, con cierre superior, tres compartimentos y cadena plateada desmontable para llevarla cruzada. Un formato minimalista para lo esencial del día. Disponible en negro y café. Medidas: ancho 21 cm, alto 13 cm.",
+    materials: ["Cuero con textura", "Cadena plateada desmontable", "Cierre metálico", "Tres compartimentos"],
     careInstructions: ["Limpiar con paño seco y suave.", "Evitar humedad directa."],
     fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/alba/01.jpg", "/images/products/alba/02.jpg"],
-  },
-  {
-    slug: "cinturon-cuero",
-    name: "Cinturón de Cuero",
-    category: "Accesorios",
-    collection: "Origen",
-    price: 42000,
-    shortDescription: "Cinturón de cuero café con tachas plateadas y costura en contraste.",
-    longDescription:
-      "Un accesorio simple pero exigente en su ejecución: cuero café trabajado a mano, con tachas plateadas, costura en contraste y hebilla metálica. Una pieza que acompaña por años.",
-    materials: ["Cuero café", "Tachas plateadas", "Hebilla metálica"],
-    careInstructions: ["Limpiar con paño seco.", "No doblar en el mismo punto de forma prolongada."],
-    fabricationTime: "10 a 15 dias Habiles",
     images: [
-      "/images/products/cinturon-cuero/01.jpg",
-      "/images/products/cinturon-cuero/02.jpg",
+      "/images/products/alba/03.jpg",
+      "/images/products/alba/04.jpg",
+      "/images/products/alba/05.jpg",
+      "/images/products/alba/02.jpg",
     ],
+    video: "/videos/alba.mp4",
   },
   {
     slug: "cinturon-hebilla-intercambiable",
@@ -247,17 +211,19 @@ export const products: Product[] = [
     careInstructions: ["Limpiar con paño seco.", "No doblar en el mismo punto de forma prolongada."],
     fabricationTime: "10 a 15 dias Habiles",
     images: [
+      "/images/products/cinturon-hebilla-intercambiable/04.jpg",
       "/images/products/cinturon-hebilla-intercambiable/01.jpg",
       "/images/products/cinturon-hebilla-intercambiable/02.jpg",
       "/images/products/cinturon-hebilla-intercambiable/03.jpg",
     ],
+    video: "/videos/cinturon-hebilla.mp4",
   },
   {
     slug: "cinturon-tacha-fleco",
     name: "Cinturón Tacha Fleco",
     category: "Accesorios",
     collection: "Origen",
-    price: 42000,
+    price: 38000,
     shortDescription: "Cinturón ancho de cuero negro con tachas, argolla central y flecos.",
     longDescription:
       "Un cinturón de carácter, hecho a mano en cuero negro: ancho, con tachas plateadas, argolla central y flecos que le dan movimiento y actitud. Se amarra a la cintura para marcar la silueta y darle personalidad a cualquier look, de día o de noche.",
@@ -267,7 +233,9 @@ export const products: Product[] = [
     images: [
       "/images/products/cinturon-tacha-fleco/01.jpg",
       "/images/products/cinturon-tacha-fleco/02.jpg",
+      "/images/products/cinturon-tacha-fleco/03.jpg",
     ],
+    video: "/videos/cinturon-tacha-fleco.mp4",
   },
   {
     slug: "genesis",
@@ -309,6 +277,7 @@ export const products: Product[] = [
       "/images/products/poncho-telar/01.jpg",
       "/images/products/poncho-telar/02.jpg",
     ],
+    video: "/videos/telar-poncho.mp4",
     featured: true,
   },
   {
@@ -323,7 +292,8 @@ export const products: Product[] = [
     materials: ["Jeans (mezclilla)", "Asas y detalles de cuero café", "Herrajes metálicos", "Correa desmontable"],
     careInstructions: ["Limpiar con paño seco.", "Evitar humedad directa.", "Nutrir el cuero con cera cada 3-4 meses."],
     fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/bolso-jeans-cuero/01.jpg"],
+    images: ["/images/products/bolso-jeans-cuero/02.jpg"],
+    video: "/videos/bolso-jeans.mp4",
     featured: true,
   },
   {
@@ -341,7 +311,9 @@ export const products: Product[] = [
     images: [
       "/images/products/bandolera-herencia/01.jpg",
       "/images/products/bandolera-herencia/02.jpg",
+      "/images/products/bandolera-herencia/03.jpg",
     ],
+    video: "/videos/bandolera-herencia.mp4",
     featured: true,
   },
   {
@@ -357,6 +329,7 @@ export const products: Product[] = [
     careInstructions: ["Limpiar con paño seco."],
     fabricationTime: "10 a 15 dias Habiles",
     images: ["/images/products/llavero/01.jpg"],
+    video: "/videos/llavero.mp4",
   },
   {
     slug: "libreta",
@@ -379,32 +352,38 @@ export const products: Product[] = [
     category: "Mochilas",
     collection: "Origen",
     price: 85000,
-    shortDescription: "Mochila saco de gamuza azul con base de cuero, cierre de argollas y tirantes de cuero.",
+    shortDescription: "Mochila saco de gamuza con base de cuero, cierre de argollas y tirantes de cuero.",
     longDescription:
-      "Tierra es una mochila saco de gamuza en tono azul, con base y tirantes de cuero café que le dan contraste y resistencia. Su cierre de argollas y su forma orgánica la hacen cómoda y con mucha personalidad, ideal para el día a día. Hecha a mano, para acompañarte y envejecer con carácter.",
-    materials: ["Gamuza azul", "Base y tirantes de cuero café", "Argollas metálicas", "Sello KALUN grabado"],
+      "Tierra es una mochila saco de gamuza, con base y tirantes de cuero café que le dan contraste y resistencia. Su cierre de argollas y su forma orgánica la hacen cómoda y con mucha personalidad, ideal para el día a día. Hecha a mano, para acompañarte y envejecer con carácter. Disponible en azul y café. Medidas: ancho 34 cm, alto 40 cm, base 20 cm.",
+    materials: ["Gamuza", "Base y tirantes de cuero café", "Argollas metálicas", "Sello KALUN grabado"],
     careInstructions: [
       "Cepillar la gamuza en seco con cepillo suave.",
       "Nutrir el cuero con cera cada 3-4 meses.",
       "Evitar humedad directa.",
     ],
     fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/mochila-tierra/01.jpg"],
+    images: [
+      "/images/products/mochila-tierra/02.jpg",
+      "/images/products/mochila-tierra/03.jpg",
+      "/images/products/mochila-tierra/01.jpg",
+    ],
+    colors: [
+      {
+        name: "Azul",
+        hex: "#24384F",
+        images: [
+          "/images/products/mochila-tierra/02.jpg",
+          "/images/products/mochila-tierra/03.jpg",
+          "/images/products/mochila-tierra/01.jpg",
+        ],
+      },
+      {
+        name: "Café",
+        hex: "#8B5E3C",
+        images: ["/images/products/mochila-tierra/cafe-01.jpg"],
+      },
+    ],
     featured: true,
-  },
-  {
-    slug: "billetera",
-    name: "Billetera de Cuero",
-    category: "Accesorios",
-    collection: "Origen",
-    price: 28000,
-    shortDescription: "Billetera de cuero café con aplique de abeja y cierre. Compacta y elegante.",
-    longDescription:
-      "Una billetera de cuero café hecha a mano, compacta y funcional, con un aplique de abeja en metal que le da identidad. Espacio para tarjetas, billetes y monedas con cierre. Una pieza pequeña que se disfruta todos los días.",
-    materials: ["Cuero café", "Aplique de abeja en metal", "Cierre metálico"],
-    careInstructions: ["Limpiar con paño seco.", "Evitar humedad directa."],
-    fabricationTime: "10 a 15 dias Habiles",
-    images: ["/images/products/billetera/01.jpg"],
   },
 ];
 
