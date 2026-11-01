@@ -31,7 +31,7 @@ export const products: Product[] = [
     name: "Tótem ALMA",
     category: "Carteras",
     collection: "Origen",
-    price: 83000,
+    price: 92000,
     shortDescription: "Bolso de gamuza cognac, amplio y suave, con clutch desmontable en su interior.",
     longDescription:
       "Tótem ALMA lleva su nombre por lo que representa: el alma es la esencia, lo que nos hace únicos y permanece con el tiempo — igual que una pieza hecha a mano para durar. Es un bolso de gamuza en tono cognac, de líneas suaves y caída natural, pensado para llevar todo lo esencial con estilo. Su asa de hombro en cuero y el sello KALUN grabado le dan identidad, y en su interior incluye un clutch desmontable para llevar aparte lo más importante. Amplio y versátil, acompaña del día a la noche. Medidas: 38 × 38 cm.",
@@ -60,7 +60,7 @@ export const products: Product[] = [
     name: "Tótem Legado",
     category: "Bolsos",
     collection: "Origen",
-    price: 102000,
+    price: 115000,
     shortDescription: "Tote amplio de cuero negro con hileras de ojetillos envejecidos a los costados.",
     longDescription:
       "Tótem Legado es un tote de cuero negro amplio y estructurado, con dos hileras de grandes ojetillos envejecidos a los costados y costura en contraste que resaltan su carácter artesanal. Sus asas al hombro y su formato generoso lo hacen ideal para el día a día. Medidas: 38 cm de ancho × 35 cm de alto × 15 cm de fuelle.",
@@ -141,7 +141,7 @@ export const products: Product[] = [
     name: "Raíz",
     category: "Carteras",
     collection: "Origen",
-    price: 76000,
+    price: 85000,
     shortDescription: "Conecta con la tierra, los oficios y el origen de los materiales. Noble, cálida y auténtica.",
     longDescription:
       "Raíz conecta con la tierra, los oficios y el origen de los materiales: noble, cálida y auténtica. Cartera de gamuza con flecos laterales cortados a mano y solapa con tachas plateadas; el sello de la estrella con alas es su detalle más juvenil y le da una onda mística única. Cadena plateada con tramo de cuero para llevarla al hombro. Disponible en negro, camel y rojo.",
@@ -183,7 +183,7 @@ export const products: Product[] = [
     name: "Alba",
     category: "Bandoleras",
     collection: "Origen",
-    price: 72000,
+    price: 78000,
     shortDescription: "Bandolera pequeña de cuero con textura, cierre superior con 3 compartimientos,cadena plateada y terminacion en cuero.",
     longDescription:
       "Alba es una bandolera compacta de cuero con textura, con cierre superior, tres compartimentos y cadena plateada desmontable para llevarla cruzada. Un formato minimalista para lo esencial del día. Disponible en negro y café. Medidas: ancho 21 cm, alto 13 cm.",
@@ -242,7 +242,7 @@ export const products: Product[] = [
     name: "Génesis",
     category: "Mochilas",
     collection: "Origen",
-    price: 110000,
+    price: 120000,
     shortDescription: "Donde todo comienza: mochila de cuero, compañera de aventuras, cómoda y resistente.",
     longDescription:
       "Génesis: donde todo comienza. Inspirada en el origen de los materiales y en el valor del trabajo artesanal, representa el nacimiento de una pieza destinada a acompañar el paso del tiempo con elegancia y autenticidad. Esta mochila será tu compañera de aventuras: cómoda, versátil y resistente, con un diseño único que da personalidad a donde quiera que vayas. Medidas: alto 36 cm, ancho 38 cm, base 11 cm.",
@@ -262,7 +262,7 @@ export const products: Product[] = [
     name: "Poncho de Alpaca y Oveja",
     category: "Textil",
     collection: "Origen",
-    price: 120000, // PLACEHOLDER — confirmar precio real
+    price: 120000,
     shortDescription: "Tejido a telar artesanal por artesanos chilenos, en lana de oveja y alpaca.",
     longDescription:
       "Poncho tejido a telar artesanal por artesanos chilenos, en lana de oveja y alpaca. Una prenda noble y abrigadora, hecha en Chile con el oficio del telar que dio origen a KALUN. Cada pieza es única, con la textura y el carácter del tejido a mano. Disponible en distintos tonos y con capucha.",
@@ -285,7 +285,7 @@ export const products: Product[] = [
     name: "Bolso de Jeans y Cuero",
     category: "Bolsos",
     collection: "Origen",
-    price: 89000,
+    price: 95000,
     shortDescription: "Bolso de viaje en jeans y cuero, amplio y resistente, con correa desmontable.",
     longDescription:
       "Un bolso de fin de semana con carácter: cuerpo de jeans (mezclilla) combinado con asas y detalles de cuero café. Amplio y resistente, ideal para escapadas y viajes cortos. Incluye correa desmontable para llevarlo al hombro. Medidas: alto 29 cm, ancho 45 cm, fuelle 17 cm, base 14 cm.",
@@ -321,7 +321,7 @@ export const products: Product[] = [
     name: "Llavero",
     category: "Accesorios",
     collection: "Origen",
-    price: 7990,
+    price: 8990,
     shortDescription: "Llavero de cuero y gamuza con mosquetón metálico. Disponible en varios colores.",
     longDescription:
       "Un pequeño detalle bien hecho: llavero de gamuza y cuero con mosquetón metálico y terminación en print animal. Disponible en café, negro y burdeo. El regalo perfecto o el complemento para tus llaves.",
@@ -336,7 +336,7 @@ export const products: Product[] = [
     name: "Libreta de Cuero",
     category: "Accesorios",
     collection: "Origen",
-    price: 28000,
+    price: 32000,
     shortDescription: "Funda de libreta en cuero genuino, con cierre de botón. Recargable.",
     longDescription:
       "Una libreta forrada en cuero genuino, hecha para acompañarte por años y envejecer con elegancia. Cierre de botón y diseño sobrio con costura en contraste. Ideal para notas, bocetos o como regalo.",
@@ -351,7 +351,7 @@ export const products: Product[] = [
     name: "Mochila Tierra",
     category: "Mochilas",
     collection: "Origen",
-    price: 85000,
+    price: 95000,
     shortDescription: "Mochila saco de gamuza con base de cuero, cierre de argollas y tirantes de cuero.",
     longDescription:
       "Tierra es una mochila saco de gamuza, con base y tirantes de cuero café que le dan contraste y resistencia. Su cierre de argollas y su forma orgánica la hacen cómoda y con mucha personalidad, ideal para el día a día. Hecha a mano, para acompañarte y envejecer con carácter. Disponible en azul y café. Medidas: ancho 34 cm, alto 40 cm, base 20 cm.",
