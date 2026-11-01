@@ -332,6 +332,20 @@ export const products: Product[] = [
     video: "/videos/llavero.mp4",
   },
   {
+    slug: "porta-anteojos",
+    name: "Porta Anteojos",
+    category: "Accesorios",
+    collection: "Origen",
+    price: 25000,
+    shortDescription: "Funda de cuero para anteojos, con lengüeta y remaches. Disponible en varios colores.",
+    longDescription:
+      "Una funda de cuero hecha a mano para proteger tus anteojos con estilo. Cuero con textura, costura en contraste y cierre de lengüeta con remaches metálicos. Disponible en café, burdeo, camel y gris.",
+    materials: ["Cuero con textura", "Remaches metálicos"],
+    careInstructions: ["Limpiar con paño seco.", "Evitar humedad directa."],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: ["/images/products/porta-anteojos/01.jpg"],
+  },
+  {
     slug: "libreta",
     name: "Libreta de Cuero",
     category: "Accesorios",
