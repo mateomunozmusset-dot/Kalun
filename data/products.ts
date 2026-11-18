@@ -63,7 +63,7 @@ export const products: Product[] = [
     price: 115000,
     shortDescription: "Tote amplio de cuero negro con hileras de ojetillos envejecidos a los costados.",
     longDescription:
-      "Tótem Legado es un tote de cuero negro amplio y estructurado, con dos hileras de grandes ojetillos envejecidos a los costados y costura en contraste que resaltan su carácter artesanal. Sus asas al hombro y su formato generoso lo hacen ideal para el día a día. Medidas: 38 cm de ancho × 35 cm de alto × 15 cm de fuelle.",
+      "Tótem Legado es un tote de cuero negro amplio y estructurado, con dos hileras de grandes ojetillos envejecidos a los costados y costura en contraste que resaltan su carácter artesanal. Sus asas al hombro y su formato generoso lo hacen ideal para el día a día. Medidas: 38 cm de ancho × 35 cm de alto × 13 cm de fuelle.",
     materials: [
       "Cuero negro",
       "Ojetillos envejecidos",
@@ -110,14 +110,14 @@ export const products: Product[] = [
     name: "Esencia",
     category: "Carteras",
     collection: "Origen",
-    price: 85000,
+    price: 98000,
     shortDescription: "La pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día.",
     longDescription:
-      "Escencia es la pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día. Cartera de gamuza con asas y ribetes de cuero negro; el herraje de cabeza de toro en metal plateado le agrega identidad y personalidad. Incluye borlas de cuero y correa bandolera ajustable y desmontable, para usarla de mano o cruzada. Medidas: 25 × 21 cm, fuelle de 11 cm. Disponible en tono ladrillo y en gris.",
+      "Esencia es la pureza del diseño: líneas limpias, equilibrio y elegancia para el día a día. Cartera de reno con asas y ribetes de cuero; el herraje de cabeza de toro envejecido le agrega identidad y personalidad. Incluye borlas de cuero y correa bandolera ajustable y desmontable, para usarla de mano o cruzada. Medidas: alto 22 cm, ancho 26 cm, fuelle 14 cm. Disponible en negro, verde, camel y burdeo.",
     materials: [
-      "Gamuza",
-      "Cuero negro en asas y ribetes",
-      "Herraje de toro en metal plateado",
+      "Reno",
+      "Cuero en asas y ribetes",
+      "Herraje de toro envejecido",
       "Correa bandolera ajustable y desmontable",
     ],
     careInstructions: [
@@ -344,6 +344,24 @@ export const products: Product[] = [
     careInstructions: ["Limpiar con paño seco.", "Evitar humedad directa."],
     fabricationTime: "10 a 15 dias Habiles",
     images: ["/images/products/porta-anteojos/01.jpg"],
+  },
+  {
+    slug: "billetera-abeja",
+    name: "Billetera Mujer Abeja",
+    category: "Accesorios",
+    collection: "Origen",
+    price: 32000,
+    shortDescription: "Billetera de cuero con aplique de abeja y monedero con cierre incluido.",
+    longDescription:
+      "Billetera de cuero hecha a mano, compacta y funcional, con espacio para tarjetas y billetes y monedero con cierre incluido. ¿Por qué una abeja? La abeja representa trabajo, dedicación, organización y colaboración: los valores que inspiran cada uno de nuestros diseños. Disponible en negro, burdeo y café. Medidas: ancho 8,5 cm, alto 11 cm.",
+    materials: ["Cuero natural", "Aplique de abeja en metal", "Monedero con cierre"],
+    careInstructions: ["Limpiar con paño seco.", "Evitar humedad directa."],
+    fabricationTime: "10 a 15 dias Habiles",
+    images: [
+      "/images/products/billetera-abeja/02.jpg",
+      "/images/products/billetera-abeja/03.jpg",
+      "/images/products/billetera-abeja/01.jpg",
+    ],
   },
   {
     slug: "libreta",
